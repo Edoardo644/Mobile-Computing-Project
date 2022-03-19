@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: main_lev_build_488
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 6635093556883099062, guid: 356c00f45293d6242b58c89c5b62cb2a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -33,4 +33,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 1
+  m_ColliderType: 0

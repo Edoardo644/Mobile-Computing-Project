@@ -5,6 +5,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private PolygonCollider2D grid;
     private BoxCollider2D box;
     private bool hit;
     private float direction;
@@ -23,9 +24,13 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hit = true;
-        box.enabled = false;
-        Deactivate();
+        if(collision != grid)
+        {
+            hit = true;
+            box.enabled = false;
+            Deactivate();
+        }
+            
     }
 
     public void SetDirection(float dir)

@@ -5,10 +5,47 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Rigidbody2D body;
-    
-    private void Start()
+    private BoxCollider2D box;
+    private bool hit;
+    private float direction;
+
+    private void Awake()
     {
-        body.velocity = transform.right * speed;
+        box = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+        if(hit) return;
+        float movementSpeed = speed * Time.deltaTime * direction;
+        transform.Translate(movementSpeed, 0, 0);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        hit = true;
+        box.enabled = false;
+        Deactivate();
+    }
+
+    public void SetDirection(float dir)
+    {
+        direction = dir;
+        gameObject.SetActive(true);
+        hit = false;
+        box.enabled = true;
+
+        float localScaleX = transform.localScale.x;
+        if(Mathf.Sign(localScaleX) != dir)
+        {
+            localScaleX = -localScaleX;
+        }
+
+        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+    }
+
+    private void Deactivate()
+    {
+        gameObject.SetActive(false);
     }
 }

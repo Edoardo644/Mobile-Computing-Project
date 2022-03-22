@@ -145,4 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  body: {fileID: 4830992058558387079}
+  arrow: {fileID: 4830992058558387079}
+  player: {fileID: 0}

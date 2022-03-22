@@ -6,10 +6,10 @@ public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firePoint;
-    private Animator anim;
+    [SerializeField] private Animator anim;
+    [SerializeField] private GameObject[] arrows;
     private PlayerMoving playerMoving;
     private float coolDownTimer = Mathf.Infinity;
-    [SerializeField] private GameObject arrowPrefab;
 
     private void Awake()
     {
@@ -26,14 +26,26 @@ public class PlayerShooting : MonoBehaviour
         }
 
         coolDownTimer += Time.deltaTime;
-
     }
 
     private void Shoot()
     {
-        Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
         anim.SetTrigger("Shoot");
         coolDownTimer = 0;
 
+        arrows[findArrow()].transform.position = firePoint.position;
+        arrows[findArrow()].GetComponent<Arrow>().SetDirection(Mathf.Sign(transform.localScale.x));
+    }
+
+    private int findArrow()
+    {
+        for(int i = 0; i < arrows.Length; i++)
+        {
+            if (!arrows[i].activeInHierarchy)
+            {
+                return i;
+            }
+        }
+        return 0;
     }
 }

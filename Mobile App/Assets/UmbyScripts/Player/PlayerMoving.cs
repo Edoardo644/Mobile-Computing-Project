@@ -12,8 +12,10 @@ public class PlayerMoving : MonoBehaviour
     private float horizontalInput; */
 
     [SerializeField] public CharacterController2D controller;
-    [SerializeField] public float RunSpeed;
+    [SerializeField] public float runSpeed = 45f;
+    [SerializeField] public Animator anim;
     private float horizontalInput = 0f;
+    private bool jump = false;
 
     /* private void Awake()
     {
@@ -25,7 +27,9 @@ public class PlayerMoving : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal") * RunSpeed;
+        horizontalInput = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        anim.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
         //flip player
         /* body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
@@ -43,17 +47,17 @@ public class PlayerMoving : MonoBehaviour
         //Jump
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            jump = true;
+            anim.SetBool("Jump", true);
         }
             
         //set parameters
-        anim.SetBool("Run", horizontalInput != 0);
-        anim.SetBool("Jump", jump);
+        //anim.SetBool("Jump", jump);
     }
 
-    private void Jump()
+    public void OnLanding()
     {
-
+        anim.SetBool("Jump", false);
     }
 
     private void FixedUpdate()
@@ -62,13 +66,13 @@ public class PlayerMoving : MonoBehaviour
         jump = false; 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /* private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Tilemap")
         {
             jump = false;
         }
-    }
+    } */
 
     public bool CanAttack()
     {

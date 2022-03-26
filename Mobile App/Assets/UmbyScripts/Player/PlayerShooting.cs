@@ -8,13 +8,13 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private Animator anim;
     [SerializeField] private GameObject[] arrows;
-    private PlayerMoving playerMoving;
+    private OldMoving playerMoving;
     private float coolDownTimer = Mathf.Infinity;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        playerMoving = GetComponent<PlayerMoving>();
+        playerMoving = GetComponent<OldMoving>();
     }
     // Update is called once per frame
     void Update()

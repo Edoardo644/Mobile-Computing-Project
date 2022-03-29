@@ -6,6 +6,7 @@ public class OldMoving : MonoBehaviour
 {
     [SerializeField] private float speed = 4.3f;
     [SerializeField] private float jumpPower = 6.8f;
+    [SerializeField] private Transform backEnv;
     private Rigidbody2D body;
     private Animator anim;
     private bool jump;
@@ -24,6 +25,8 @@ public class OldMoving : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        backEnv.Translate(-(horizontalInput * Time.deltaTime), 0, 0);
+
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;

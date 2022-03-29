@@ -6,6 +6,7 @@ public class EdoPCMovement : MonoBehaviour
 {
 
     public Controller2D controller;
+    public Animator animator;
     float horizontalMove = 0f;
     public float runSpeed = 40f;
     bool jump = false;
@@ -17,9 +18,12 @@ public class EdoPCMovement : MonoBehaviour
 
        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
 
 
@@ -31,6 +35,11 @@ public class EdoPCMovement : MonoBehaviour
             crouch = false;
         }
 
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
     }
 
     

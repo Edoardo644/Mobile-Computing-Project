@@ -7,11 +7,12 @@ TagManager:
   - Tilemap
   - Grid
   - Platform
+  - Arrow
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Background 1

@@ -51,7 +51,7 @@ public class OldMoving : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Tilemap")
+        if (collision.gameObject.tag == "Tilemap" || collision.gameObject.tag == "Platform")
         {
             jump = false;
         }

@@ -8,7 +8,7 @@ public class OldMoving : MonoBehaviour
     [SerializeField] private float jumpPower = 6.8f;
     private Rigidbody2D body;
     private Animator anim;
-    private bool jump;
+    public bool jump;
     private float horizontalInput;
 
     private void Awake()
@@ -49,13 +49,13 @@ public class OldMoving : MonoBehaviour
         anim.SetBool("Jump", jump);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /* private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Tilemap" || collision.gameObject.tag == "Platform")
         {
             jump = false;
         }
-    } 
+    } */
 
     public bool CanAttack()
     {

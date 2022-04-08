@@ -22,7 +22,8 @@ public class PlayerShooting : MonoBehaviour
         //Attack
         if(Input.GetKeyDown(KeyCode.S) && coolDownTimer > attackCoolDown && playerMoving.CanAttack())
         {
-            Shoot();
+            anim.SetTrigger("Shoot");
+            coolDownTimer = 0;
         }
 
         coolDownTimer += Time.deltaTime;
@@ -30,9 +31,6 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
-        anim.SetTrigger("Shoot");
-        coolDownTimer = 0;
-
         arrows[findArrow()].transform.position = firePoint.position;
         arrows[findArrow()].GetComponent<Arrow>().SetDirection(Mathf.Sign(transform.localScale.x));
     }

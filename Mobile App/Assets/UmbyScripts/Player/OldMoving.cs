@@ -10,6 +10,7 @@ public class OldMoving : MonoBehaviour
     private Animator anim;
     public bool jump;
     private float horizontalInput;
+    private int coins = 0;
 
     private void Awake()
     {
@@ -49,13 +50,14 @@ public class OldMoving : MonoBehaviour
         anim.SetBool("Jump", jump);
     }
 
-    /* private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Tilemap" || collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Coin")
         {
-            jump = false;
+            Destroy(collision.gameObject);
+            coins++;
         }
-    } */
+    }
 
     public bool CanAttack()
     {

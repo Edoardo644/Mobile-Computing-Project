@@ -10,7 +10,6 @@ public class OldMoving : MonoBehaviour
     private Animator anim;
     public bool jump;
     private float horizontalInput;
-    public int coins = 0;
 
     private void Awake()
     {
@@ -48,15 +47,6 @@ public class OldMoving : MonoBehaviour
         //set parameters
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Jump", jump);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Coin")
-        {
-            Destroy(collision.gameObject);
-            coins++;
-        }
     }
 
     public bool CanAttack()

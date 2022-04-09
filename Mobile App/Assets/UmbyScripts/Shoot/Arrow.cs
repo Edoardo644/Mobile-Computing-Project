@@ -6,7 +6,7 @@ public class Arrow : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private PolygonCollider2D grid;
-    [SerializeField] private OldMoving collectables;
+    [SerializeField] private CoinPicker collectables;
     private BoxCollider2D box;
     private bool hit;
     private float direction;
@@ -35,7 +35,7 @@ public class Arrow : MonoBehaviour
         if(collision.tag == "Coin")
         {
             Destroy(collision.gameObject);
-            collectables.coins++;
+            collectables.Pickup();
         }
             
     }

@@ -208,7 +208,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1112506737
-  m_SortingLayer: -2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20f9f4c8fe0a45c4fa094ed83807328b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -575,31 +575,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314027b2fc42df14694f618bf4521381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 200
-  m_CrouchSpeed: 0.4
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
-  m_AirControl: 1
+  m_AirControl: 0
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
-  m_GroundCheck: {fileID: 127105297}
-  m_CeilingCheck: {fileID: 1872999097}
+    m_Bits: 0
+  m_GroundCheck: {fileID: 0}
+  m_CeilingCheck: {fileID: 0}
   m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 584838518}
-        m_TargetAssemblyTypeName: EdoPCMovement, Assembly-CSharp
-        m_MethodName: OnLanding
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -48932,7 +48920,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1868808439
-  m_SortingLayer: -3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c93f3c71ec0a4234b9cd78f6083c56ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -49014,7 +49002,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 173096417
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09c5b9cf154c31b4f8907f6e35a85c97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

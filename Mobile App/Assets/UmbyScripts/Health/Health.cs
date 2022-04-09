@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [Header ("Health")]
     [SerializeField] private float startingHealth;
+    private OldMoving player;
+    private Rigidbody2D body;
     public float currentHealth { get; private set; }
     private Animator anim;
-    private bool dead;
+    public bool dead;
+
+    [Header("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numOfFlashes;
+    private SpriteRenderer rend;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        body = GetComponent<Rigidbody2D>();
+        rend = GetComponent<SpriteRenderer>();
+        player = GetComponent<OldMoving>();
     }
 
     public void TakeDamage(float damage)
@@ -23,6 +34,7 @@ public class Health : MonoBehaviour
         {
             //hurt
             anim.SetTrigger("Hurt");
+            StartCoroutine(Invulnerability());
         }
 
         else
@@ -37,11 +49,35 @@ public class Health : MonoBehaviour
         }
     }
 
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        for (int i = 0; i < numOfFlashes; i++)
+        {
+            rend.color = new Color(0.963014f, 0.3433962f, 1, 0.5f);
+            yield return new WaitForSeconds(iFramesDuration / (numOfFlashes * 2));
+            rend.color = Color.white;
+            yield return new WaitForSeconds(iFramesDuration / (numOfFlashes * 2));
+        }
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Tilemap" && dead == true)
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
+
+        if(collision.gameObject.tag == "Enemy" || (collision.gameObject.tag == "AltEnemy" && player.jump == false))
+        {
+            TakeDamage(1);
+        }
+
+        if(collision.gameObject.tag == "AltEnemy" && player.jump == true)
+        {
+            //to fix
+            Destroy(collision.gameObject);
         }
     }
 

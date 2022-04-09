@@ -98,6 +98,9 @@ TextureImporter:
   - first:
       213: -5122620898460785298
     second: Monster1Pack_A_0
+  - first:
+      213: -6563536542152399434
+    second: Monster1Pack_A_33
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -862,7 +865,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster1Pack_A_0
+      name: Monster1Pack_A_33
       rect:
         serializedVersion: 2
         x: 207
@@ -876,8 +879,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e65a0440f6bc8e8b0800000000000000
-      internalID: -5122620898460785298
+      spriteID: 6b5e5be3a42a9e4a0800000000000000
+      internalID: -6563536542152399434
       vertices: []
       indices: 
       edges: []

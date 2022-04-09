@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    [SerializeField] public OldMoving player;
+    [SerializeField] private OldMoving player;
+    [SerializeField] private Health playerH;
+    [SerializeField] private Rigidbody2D body;
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -17,6 +19,11 @@ public class Ground : MonoBehaviour
         if (collision.gameObject.tag == "Tilemap" || collision.gameObject.tag == "Platform")
         {
             player.jump = false;
+        }
+
+        if (collision.gameObject.tag == "Tilemap" && playerH.dead == true)
+        {
+            body.bodyType = RigidbodyType2D.Static;
         }
     }
 }

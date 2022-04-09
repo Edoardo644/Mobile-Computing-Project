@@ -6,6 +6,7 @@ public class Arrow : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private PolygonCollider2D grid;
+    [SerializeField] private OldMoving collectables;
     private BoxCollider2D box;
     private bool hit;
     private float direction;
@@ -24,11 +25,17 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision != grid)
+        if(collision != grid && collision.tag != "Coin")
         {
             hit = true;
             box.enabled = false;
             Deactivate();
+        }
+
+        if(collision.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+            collectables.coins++;
         }
             
     }

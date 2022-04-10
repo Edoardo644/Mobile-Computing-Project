@@ -64,21 +64,16 @@ public class Health : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Tilemap" && dead == true)
+        /* if(collision.gameObject.tag == "Tilemap" && dead == true)
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        }
+        } */
 
         if(collision.gameObject.tag == "Enemy" || (collision.gameObject.tag == "AltEnemy" && player.jump == false))
         {
             TakeDamage(1);
         }
 
-        if(collision.gameObject.tag == "AltEnemy" && player.jump == true)
-        {
-            //to fix
-            Destroy(collision.gameObject);
-        }
     }
 
     private void Update()

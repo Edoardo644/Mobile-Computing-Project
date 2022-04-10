@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 584838519}
   - component: {fileID: 584838518}
   - component: {fileID: 584838520}
+  - component: {fileID: 584838521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -481,6 +482,7 @@ Transform:
   m_Children:
   - {fileID: 127105297}
   - {fileID: 1872999097}
+  - {fileID: 971730068}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -580,6 +582,54 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &584838521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584838513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6f7177c32164f408f2b7f842fc5e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 584838520}
+  attackPoint: {fileID: 971730068}
+  attackRange: 0.41
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!1 &971730067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971730068}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &971730068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971730067}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.106426075, y: -0.003701972, z: -2.011925}
+  m_LocalScale: {x: 0.96400464, y: 0.97419435, z: 1}
+  m_Children: []
+  m_Father: {fileID: 584838515}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560942728
 GameObject:
   m_ObjectHideFlags: 0
@@ -48763,7 +48813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788876812}
   - component: {fileID: 1788876811}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FlameDemon Evolved_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

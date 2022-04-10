@@ -11,6 +11,7 @@ TagManager:
   - Coin
   - Enemy
   - AltEnemy
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -45,11 +46,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: BackGround
     uniqueID: 2869726685
+    locked: 0
+  - name: Background 1
+    uniqueID: 112567093
+    locked: 0
+  - name: Background 2
+    uniqueID: 2443547139
+    locked: 0
+  - name: Background 3
+    uniqueID: 2609925731
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: BackEnvir
     uniqueID: 3512134377

@@ -207,8 +207,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1112506737
-  m_SortingLayer: 0
+  m_SortingLayerID: -1851420157
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20f9f4c8fe0a45c4fa094ed83807328b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -408,9 +408,8 @@ GameObject:
   - component: {fileID: 584838517}
   - component: {fileID: 584838516}
   - component: {fileID: 584838519}
-  - component: {fileID: 584838520}
   - component: {fileID: 584838518}
-  - component: {fileID: 584838521}
+  - component: {fileID: 584838520}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -541,12 +540,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 584838513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956947f6ce3a1ba4c835aacc1336eb18, type: 3}
+  m_Script: {fileID: 11500000, guid: 21dfaf4c4cc67ba4cb89beb90b5c8c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 584838520}
-  animator: {fileID: 584838521}
-  runSpeed: 25
+  speed: 1.8
+  jumpPower: 4
 --- !u!58 &584838519
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -563,35 +561,7 @@ CircleCollider2D:
   m_Offset: {x: 0.008645526, y: -0.09210462}
   serializedVersion: 2
   m_Radius: 0.09129788
---- !u!114 &584838520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584838513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 314027b2fc42df14694f618bf4521381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 0
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!95 &584838521
+--- !u!95 &584838520
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -624,7 +594,7 @@ GameObject:
   - component: {fileID: 1560942732}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48919,8 +48889,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1868808439
-  m_SortingLayer: 0
+  m_SortingLayerID: 112567093
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c93f3c71ec0a4234b9cd78f6083c56ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -49001,8 +48971,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 173096417
-  m_SortingLayer: 0
+  m_SortingLayerID: -1685041565
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09c5b9cf154c31b4f8907f6e35a85c97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

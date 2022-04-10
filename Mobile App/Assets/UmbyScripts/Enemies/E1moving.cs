@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class E1moving : MonoBehaviour
 {
+    //attack
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private float colliderDistance;
@@ -11,11 +12,23 @@ public class E1moving : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private OldMoving player;
     private float cooldownTimer = Mathf.Infinity;
+    
+    //moving
+    [SerializeField] private float moveDistance;
+    [SerializeField] private float speed;
+    private bool movingLeft;
+    private bool move = true;
+    private float rightEdge;
+    private float leftEdge;
+
     private Animator anim;
     private Rigidbody2D body;
 
     private void Awake()
     {
+        rightEdge = transform.position.x + moveDistance;
+        leftEdge = transform.position.x - moveDistance;
+
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -23,16 +36,45 @@ public class E1moving : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (move)
+        {
+            if (movingLeft)
+            {
+                if (transform.position.x > leftEdge)
+                {
+                    transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
+                    transform.localScale = Vector3.one;
+                }
+                else
+                {
+                    movingLeft = false;
+                }
+            }
+            else
+            {
+                if (transform.position.x < rightEdge)
+                {
+                    transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                else
+                {
+                    movingLeft = true;
+                }
+            }
+        }
+
         cooldownTimer += Time.deltaTime;
 
         if (PlayerInsight())
         {
+            move = false;
             if(cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("Attack");
             }
-        }        
+        }
     }
 
     private bool PlayerInsight()
@@ -51,20 +93,32 @@ public class E1moving : MonoBehaviour
 
     private void Charge()
     {
-        body.velocity = new Vector2(5f * (-transform.localScale.x), body.velocity.y);
+        body.velocity = new Vector2(4.5f * (-transform.localScale.x), body.velocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && player.jump == true)
+        if ((collision.gameObject.tag == "Player" && player.jump == true) || collision.gameObject.tag == "Arrow")
         {
-            //to fix
+            move = false;
             anim.SetTrigger("Die");
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            Physics2D.IgnoreLayerCollision(6, 7, true);
         }
     }
 
     private void Deactivate()
     {
         Destroy(gameObject);
+    }
+
+    private void Moving()
+    {
+        move = true;
+    }
+
+    private void ColliderActivate()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

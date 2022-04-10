@@ -6,7 +6,7 @@ public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private Animator anim;
+    private Animator anim;
     [SerializeField] private GameObject[] arrows;
     private OldMoving playerMoving;
     private float coolDownTimer = Mathf.Infinity;

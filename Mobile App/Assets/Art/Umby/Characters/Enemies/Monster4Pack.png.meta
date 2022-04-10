@@ -4,133 +4,133 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 2260025004878916334
-    second: Monster4Pack_0
+    second: E2fly_0
   - first:
       213: -5508198922570755218
-    second: Monster4Pack_1
+    second: E2fly_1
   - first:
       213: 3370209243230017000
-    second: Monster4Pack_2
+    second: E2fly_2
   - first:
       213: 3204909847116724698
-    second: Monster4Pack_3
+    second: E2fly_3
   - first:
       213: -7992534071902304778
-    second: Monster4Pack_4
+    second: E2fly_4
   - first:
       213: 8477920899926790010
-    second: Monster4Pack_5
+    second: E2fly_5
   - first:
       213: 5411694376682484459
-    second: Monster4Pack_6
+    second: E2fly_6
   - first:
       213: 9036823630387174268
-    second: Monster4Pack_7
+    second: E2fly_7
   - first:
       213: -1935943327472611165
-    second: Monster4Pack_8
+    second: E2attack_0
   - first:
       213: 4988924000388375029
-    second: Monster4Pack_9
+    second: E2attack_1
   - first:
       213: 3095838798539175360
-    second: Monster4Pack_10
+    second: E2attack_2
   - first:
       213: -6080257655877685592
-    second: Monster4Pack_11
+    second: E2attack_3
   - first:
       213: 7063466804772503612
-    second: Monster4Pack_12
+    second: E2attack_4
   - first:
       213: 2840925281269335909
-    second: Monster4Pack_13
+    second: E2attack_5
   - first:
       213: -3653616934122887660
-    second: Monster4Pack_14
+    second: E2attack_6
   - first:
       213: 2172474624686660498
-    second: Monster4Pack_15
+    second: E2attack_7
   - first:
       213: 8315292196809740721
-    second: Monster4Pack_16
+    second: E2die_1
   - first:
       213: 4188223288559314564
-    second: Monster4Pack_17
+    second: E2die_2
   - first:
       213: -6602724081547192199
-    second: Monster4Pack_18
+    second: E2die_3
   - first:
       213: -1542092195704775130
-    second: Monster4Pack_23
+    second: E2die_0
   - first:
       213: 1852123994732881457
-    second: Monster4Pack_24
+    second: E2die_4
   - first:
       213: -8248710361210262779
-    second: Monster4Pack_28
+    second: E2die_5
   - first:
       213: 276973418201539163
-    second: Monster4Pack_32
+    second: E2die_7
   - first:
       213: 1155127201037651790
-    second: Monster4Pack_35
+    second: E2die_6
   - first:
       213: -6581932908290058157
-    second: Monster4Pack_36
+    second: E2die_8
   - first:
       213: 4267754756329165470
-    second: Monster4Pack_37
+    second: E2die_9
   - first:
       213: -6061891914628759671
-    second: Monster4Pack_38
+    second: E2die_10
   - first:
       213: -6292838692399087817
-    second: Monster4Pack_39
+    second: E2die_11
   - first:
       213: 1261967627155716667
-    second: Monster4Pack_40
+    second: E2die_12
   - first:
       213: 5806358790027357209
-    second: Monster4Pack_41
+    second: E2die_13
   - first:
       213: 3118294079548889154
-    second: Monster4Pack_42
+    second: E2die_14
   - first:
       213: -8522088841684912450
-    second: Monster4Pack_43
+    second: E2die_15
   - first:
       213: -7735170349942416843
-    second: Monster4Pack_44
+    second: Fireball_0
   - first:
       213: 6931353383896362408
-    second: Monster4Pack_45
+    second: E2die_16
   - first:
       213: 6030212789032568983
-    second: Monster4Pack_46
+    second: E2die_17
   - first:
       213: 2615648206291029826
-    second: Monster4Pack_47
+    second: E2die_18
   - first:
       213: -2368815533863257556
-    second: Monster4Pack_48
+    second: Fireball_1
   - first:
       213: 9108059278451710579
-    second: Monster4Pack_49
+    second: Fireball_2
   - first:
       213: 5169713188342945861
-    second: Monster4Pack_50
+    second: FireballEx_0
   - first:
       213: -5333727777990218365
-    second: Monster4Pack_51
+    second: FireballEx_1
   - first:
       213: -6787817238920628688
-    second: Monster4Pack_52
+    second: FireballEx_2
   - first:
       213: 4016272332138934037
-    second: Monster4Pack_56
+    second: FireballEx_3
   - first:
       213: 3753101370967499509
-    second: Monster4Pack_58
+    second: MoFireballEx_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -244,7 +244,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monster4Pack_0
+      name: E2fly_0
       rect:
         serializedVersion: 2
         x: 12
@@ -265,13 +265,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_1
+      name: E2fly_1
       rect:
         serializedVersion: 2
         x: 75
         y: 744
         width: 37
-        height: 29
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,13 +286,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_2
+      name: E2fly_2
       rect:
         serializedVersion: 2
         x: 136
         y: 744
         width: 43
-        height: 31
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,13 +307,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_3
+      name: E2fly_3
       rect:
         serializedVersion: 2
         x: 204
         y: 749
         width: 37
-        height: 33
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,13 +328,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_4
+      name: E2fly_4
       rect:
         serializedVersion: 2
         x: 12
         y: 686
         width: 42
-        height: 30
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,13 +349,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_5
+      name: E2fly_5
       rect:
         serializedVersion: 2
         x: 75
         y: 688
         width: 46
-        height: 21
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,13 +370,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_6
+      name: E2fly_6
       rect:
         serializedVersion: 2
         x: 136
         y: 685
         width: 51
-        height: 26
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,13 +391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_7
+      name: E2fly_7
       rect:
         serializedVersion: 2
         x: 204
         y: 694
         width: 46
-        height: 24
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_8
+      name: E2attack_0
       rect:
         serializedVersion: 2
         x: 11
@@ -433,13 +433,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_9
+      name: E2attack_1
       rect:
         serializedVersion: 2
         x: 75
         y: 614
         width: 36
-        height: 36
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,13 +454,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_10
+      name: E2attack_2
       rect:
         serializedVersion: 2
         x: 140
         y: 614
         width: 33
-        height: 31
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,13 +475,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_11
+      name: E2attack_3
       rect:
         serializedVersion: 2
         x: 205
         y: 615
         width: 32
-        height: 30
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,13 +496,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_12
+      name: E2attack_4
       rect:
         serializedVersion: 2
         x: 12
         y: 552
         width: 35
-        height: 24
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -517,13 +517,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_13
+      name: E2attack_5
       rect:
         serializedVersion: 2
         x: 75
         y: 553
         width: 39
-        height: 35
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,7 +538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_14
+      name: E2attack_6
       rect:
         serializedVersion: 2
         x: 139
@@ -559,7 +559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_15
+      name: E2attack_7
       rect:
         serializedVersion: 2
         x: 204
@@ -580,7 +580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_16
+      name: E2die_1
       rect:
         serializedVersion: 2
         x: 74
@@ -601,7 +601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_17
+      name: E2die_2
       rect:
         serializedVersion: 2
         x: 137
@@ -622,7 +622,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_18
+      name: E2die_3
       rect:
         serializedVersion: 2
         x: 193
@@ -643,13 +643,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_23
+      name: E2die_0
       rect:
         serializedVersion: 2
         x: 12
         y: 486
         width: 33
-        height: 31
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -664,7 +664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_24
+      name: E2die_4
       rect:
         serializedVersion: 2
         x: 1
@@ -685,7 +685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_28
+      name: E2die_5
       rect:
         serializedVersion: 2
         x: 70
@@ -706,7 +706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_32
+      name: E2die_7
       rect:
         serializedVersion: 2
         x: 200
@@ -727,7 +727,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_35
+      name: E2die_6
       rect:
         serializedVersion: 2
         x: 137
@@ -748,13 +748,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_36
+      name: E2die_8
       rect:
         serializedVersion: 2
         x: 17
         y: 371
         width: 25
-        height: 29
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,13 +769,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_37
+      name: E2die_9
       rect:
         serializedVersion: 2
         x: 81
         y: 372
         width: 25
-        height: 28
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,13 +790,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_38
+      name: E2die_10
       rect:
         serializedVersion: 2
         x: 145
         y: 371
         width: 27
-        height: 30
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -811,13 +811,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_39
+      name: E2die_11
       rect:
         serializedVersion: 2
         x: 209
         y: 371
         width: 30
-        height: 27
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -832,13 +832,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_40
+      name: E2die_12
       rect:
         serializedVersion: 2
         x: 15
         y: 288
         width: 30
-        height: 23
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -853,13 +853,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_41
+      name: E2die_13
       rect:
         serializedVersion: 2
         x: 76
         y: 288
         width: 37
-        height: 17
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,13 +874,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_42
+      name: E2die_14
       rect:
         serializedVersion: 2
         x: 136
         y: 288
         width: 43
-        height: 14
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -895,13 +895,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_43
+      name: E2die_15
       rect:
         serializedVersion: 2
         x: 201
         y: 288
         width: 42
-        height: 13
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -916,13 +916,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_44
+      name: Fireball_0
       rect:
         serializedVersion: 2
         x: 215
         y: 250
         width: 22
-        height: 16
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -937,13 +937,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_45
+      name: E2die_16
       rect:
         serializedVersion: 2
         x: 9
         y: 224
         width: 41
-        height: 10
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,13 +958,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_46
+      name: E2die_17
       rect:
         serializedVersion: 2
         x: 72
         y: 224
         width: 44
-        height: 7
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -979,13 +979,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_47
+      name: E2die_18
       rect:
         serializedVersion: 2
         x: 141
         y: 224
         width: 37
-        height: 4
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1000,13 +1000,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_48
+      name: Fireball_1
       rect:
         serializedVersion: 2
         x: 22
         y: 187
         width: 29
-        height: 18
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1021,13 +1021,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_49
+      name: Fireball_2
       rect:
         serializedVersion: 2
         x: 87
         y: 186
         width: 29
-        height: 21
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1042,13 +1042,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_50
+      name: FireballEx_0
       rect:
         serializedVersion: 2
         x: 148
-        y: 181
+        y: 182
         width: 20
-        height: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1063,13 +1063,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_51
+      name: FireballEx_1
       rect:
         serializedVersion: 2
         x: 211
         y: 181
         width: 21
-        height: 19
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1084,13 +1084,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_52
+      name: FireballEx_2
       rect:
         serializedVersion: 2
         x: 17
         y: 113
         width: 27
-        height: 26
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1105,13 +1105,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_56
+      name: FireballEx_3
       rect:
         serializedVersion: 2
         x: 76
         y: 110
         width: 36
-        height: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1126,13 +1126,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster4Pack_58
+      name: MoFireballEx_4
       rect:
         serializedVersion: 2
         x: 142
         y: 110
         width: 31
-        height: 34
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

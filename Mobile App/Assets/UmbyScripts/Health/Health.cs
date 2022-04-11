@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     [Header ("Health")]
     [SerializeField] private float startingHealth;
     private OldMoving player;
-    private Rigidbody2D body;
     public float currentHealth { get; private set; }
     private Animator anim;
     public bool dead;
@@ -21,7 +20,6 @@ public class Health : MonoBehaviour
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        body = GetComponent<Rigidbody2D>();
         rend = GetComponent<SpriteRenderer>();
         player = GetComponent<OldMoving>();
     }
@@ -64,11 +62,6 @@ public class Health : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /* if(collision.gameObject.tag == "Tilemap" && dead == true)
-        {
-            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        } */
-
         if(collision.gameObject.tag == "Enemy" || (collision.gameObject.tag == "AltEnemy" && player.jump == false))
         {
             TakeDamage(1);

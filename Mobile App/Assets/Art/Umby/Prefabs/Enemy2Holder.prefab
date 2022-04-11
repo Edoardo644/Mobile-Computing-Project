@@ -133,14 +133,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 137caaf760fb67142b58d3a092102093, type: 3}
---- !u!4 &4906636934184763560 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5009509779239015536, guid: 137caaf760fb67142b58d3a092102093, type: 3}
-  m_PrefabInstance: {fileID: 113358350762513624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4906636934184763563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5009509779239015539, guid: 137caaf760fb67142b58d3a092102093, type: 3}
+  m_PrefabInstance: {fileID: 113358350762513624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4906636934184763560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5009509779239015536, guid: 137caaf760fb67142b58d3a092102093, type: 3}
   m_PrefabInstance: {fileID: 113358350762513624}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &138063429908128089
@@ -883,8 +883,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
+--- !u!1 &5114020910189889696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2913113617594133273, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
+  m_PrefabInstance: {fileID: 7968507708360156089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5114020910189889697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2913113617594133272, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
   m_PrefabInstance: {fileID: 7968507708360156089}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8541530496419571526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114020910189889696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c798a41970bbff6478c068bed07585ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 2
+  dead: 0
+  iFramesDuration: 2
+  numOfFlashes: 4

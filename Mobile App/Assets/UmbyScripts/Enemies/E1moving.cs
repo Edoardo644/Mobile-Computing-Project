@@ -98,13 +98,26 @@ public class E1moving : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.tag == "Player" && player.jump == true) || collision.gameObject.tag == "Arrow")
+        if (collision.gameObject.tag == "Player" && player.jump == true)
         {
-            move = false;
-            anim.SetTrigger("Die");
-            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            Physics2D.IgnoreLayerCollision(6, 7, true);
+            Die();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Arrow")
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        move = false;
+        anim.SetTrigger("Die");
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        Physics2D.IgnoreLayerCollision(6, 7, true);
     }
 
     private void Deactivate()

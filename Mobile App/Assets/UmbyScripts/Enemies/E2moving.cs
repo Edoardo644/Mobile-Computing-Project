@@ -18,7 +18,7 @@ public class E2moving : MonoBehaviour
     [SerializeField] private float moveDistance;
     [SerializeField] private float speed;
     private bool movingLeft;
-    private bool move = true;
+    public bool move = true;
     private float rightEdge;
     private float leftEdge;
 

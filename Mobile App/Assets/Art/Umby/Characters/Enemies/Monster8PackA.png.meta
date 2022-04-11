@@ -4,40 +4,40 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6869268923633794523
-    second: Monster8PackA_0
+    second: E3idle_0
   - first:
       213: 7267324024091809130
-    second: Monster8PackA_1
+    second: E3idle_1
   - first:
       213: -2371201617871346725
-    second: Monster8PackA_2
+    second: E3idle_2
   - first:
       213: -7713624312627472018
-    second: Monster8PackA_3
+    second: E3idle_3
   - first:
       213: 859130600570491504
-    second: Monster8PackA_4
+    second: E3walk_0
   - first:
       213: 2497181083412531517
-    second: Monster8PackA_5
+    second: E3walk_1
   - first:
       213: 4986675552413537117
-    second: Monster8PackA_6
+    second: E3walk_2
   - first:
       213: -5999444897391130651
-    second: Monster8PackA_7
+    second: E3walk_3
   - first:
       213: 1182959735614628191
-    second: Monster8PackA_8
+    second: E3walk_4
   - first:
       213: 3860150269129462126
-    second: Monster8PackA_9
+    second: E3walk_5
   - first:
       213: -1509677115114777077
-    second: Monster8PackA_10
+    second: E3walk_6
   - first:
       213: 6119114260249498481
-    second: Monster8PackA_11
+    second: E3walk_7
   - first:
       213: -8384723298823822706
     second: Monster8PackA_12
@@ -49,73 +49,73 @@ TextureImporter:
     second: Monster8PackA_14
   - first:
       213: 7194606570909676849
-    second: Monster8PackA_15
+    second: E3die_0
   - first:
       213: 3609585694624904654
-    second: Monster8PackA_17
+    second: E3die_1
   - first:
       213: 6598974633218819221
-    second: Monster8PackA_18
+    second: E3die_2
   - first:
       213: -81917690527180765
-    second: Monster8PackA_19
+    second: E3die_3
   - first:
       213: -7659781711031550869
-    second: Monster8PackA_20
+    second: E3die_4
   - first:
       213: 933915078605960159
-    second: Monster8PackA_21
+    second: E3die_5
   - first:
       213: 7398018875858203034
-    second: Monster8PackA_22
+    second: E3die_6
   - first:
       213: -7044206465343702363
-    second: Monster8PackA_23
+    second: E3die_7
   - first:
       213: 2553537936619786795
-    second: Monster8PackA_24
+    second: E3die_8
   - first:
       213: -936548320742284671
-    second: Monster8PackA_25
+    second: E3die_9
   - first:
       213: -2363137417993296868
-    second: Monster8PackA_26
+    second: E3die_10
   - first:
       213: -5559648721922503546
-    second: Monster8PackA_27
+    second: E3die_11
   - first:
       213: 3080388094663032789
-    second: Monster8PackA_28
+    second: E3die_12
   - first:
       213: -4917955232809987736
-    second: Monster8PackA_29
+    second: E3die_13
   - first:
       213: 774118402669788187
-    second: Monster8PackA_30
+    second: E3die_14
   - first:
       213: -4584264841057284021
-    second: Monster8PackA_31
+    second: E3shield_0
   - first:
       213: -1630730494851519840
-    second: Monster8PackA_32
+    second: E3shield_1
   - first:
       213: 8452825348587228515
-    second: Monster8PackA_33
+    second: E3shield_2
   - first:
       213: -2958962308395083495
-    second: Monster8PackA_34
+    second: E3shield_3
   - first:
       213: 8548740424273133706
-    second: Monster8PackA_35
+    second: E3shield_4
   - first:
       213: -114634458519713250
-    second: Monster8PackA_36
+    second: E3shield_5
   - first:
       213: 3173165503115637251
-    second: Monster8PackA_37
+    second: E3shield_6
   - first:
       213: -2495586757520116832
-    second: Monster8PackA_38
+    second: E3shield_7
   - first:
       213: 6904765654480535531
     second: Monster8PackA_39
@@ -136,112 +136,112 @@ TextureImporter:
     second: Monster8PackA_44
   - first:
       213: -3778861891790978316
-    second: Monster8PackA_45
+    second: E3shield_8
   - first:
       213: -8789429275601618145
-    second: Monster8PackA_46
+    second: E3shield_9
   - first:
       213: -8111451273420785413
-    second: Monster8PackA_47
+    second: E3shield_10
   - first:
       213: -3818457074746871678
-    second: Monster8PackA_48
+    second: E3shield_11
   - first:
       213: -8659658769368154260
-    second: Monster8PackA_49
+    second: E3shield_12
   - first:
       213: -817034770929937296
-    second: Monster8PackA_50
+    second: E3shield_13
   - first:
       213: 4680160260120771599
-    second: Monster8PackA_51
+    second: E3shield_14
   - first:
       213: 1277299642786567726
-    second: Monster8PackA_52
+    second: E3shield_15
   - first:
       213: -8310661815596861093
-    second: Monster8PackA_53
+    second: E3shieldDie_0
   - first:
       213: 7387044146260193653
-    second: Monster8PackA_54
+    second: E3shieldDie_1
   - first:
       213: 8019170480776353135
-    second: Monster8PackA_55
+    second: E3shieldDie_2
   - first:
       213: 2756874446469496812
     second: Monster8PackA_56
   - first:
       213: 6949063671197073230
-    second: Monster8PackA_57
+    second: E3shieldDie_3
   - first:
       213: 9085375039367093809
-    second: Monster8PackA_59
+    second: E3shieldDie_4
   - first:
       213: -7733434381239586256
-    second: Monster8PackA_60
+    second: E3shieldDie_7
   - first:
       213: 2110408765124516453
-    second: Monster8PackA_61
+    second: E3shieldDie_5
   - first:
       213: 1720201904336994935
-    second: Monster8PackA_62
+    second: E3shieldDie_6
   - first:
       213: -4150516252139168793
-    second: Monster8PackA_63
+    second: E3shieldDie_8
   - first:
       213: -1217009956276169183
-    second: Monster8PackA_64
+    second: E3shieldDie_9
   - first:
       213: -2558633872230982934
-    second: Monster8PackA_65
+    second: E3shieldDie_10
   - first:
       213: -1406261653171267992
-    second: Monster8PackA_66
+    second: E3shieldDie_11
   - first:
       213: 5552378269145180679
-    second: Monster8PackA_67
+    second: E3shieldDie_12
   - first:
       213: -8739348235675474666
-    second: Monster8PackA_68
+    second: E3shieldDie_13
   - first:
       213: -6302173076851622347
-    second: Monster8PackA_69
+    second: E3shieldDie_14
   - first:
       213: 361451829558454367
-    second: Monster8PackA_70
+    second: E3shieldDie_15
   - first:
       213: -6454179009136335202
-    second: Monster8PackA_71
+    second: E3shieldDie_16
   - first:
       213: -5366685793197813023
-    second: Monster8PackA_72
+    second: E3stand_0
   - first:
       213: 4838269702255650298
-    second: Monster8PackA_73
+    second: E3stand_1
   - first:
       213: 6442655052610969859
-    second: Monster8PackA_74
+    second: E3stand_2
   - first:
       213: -8451054417532032607
-    second: Monster8PackA_75
+    second: E3stand_3
   - first:
       213: 8578376959707884063
-    second: Monster8PackA_76
+    second: E3stand_4
   - first:
       213: 5026834252054782003
-    second: Monster8PackA_77
+    second: E3stand_5
   - first:
       213: 457216556742516324
-    second: Monster8PackA_79
+    second: E3hurt_0
   - first:
       213: -4207776759459108654
-    second: Monster8PackA_80
+    second: E3hurt_1
   - first:
       213: 5920543164230633479
-    second: Monster8PackA_81
+    second: E3hurt_2
   - first:
       213: -7348763779561577568
-    second: Monster8PackA_82
+    second: E3hurt_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -355,7 +355,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monster8PackA_0
+      name: E3idle_0
       rect:
         serializedVersion: 2
         x: 28
@@ -376,13 +376,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_1
+      name: E3idle_1
       rect:
         serializedVersion: 2
         x: 108
-        y: 960
+        y: 961
         width: 40
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,13 +397,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_2
+      name: E3idle_2
       rect:
         serializedVersion: 2
         x: 188
         y: 960
         width: 40
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,7 +418,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_3
+      name: E3idle_3
       rect:
         serializedVersion: 2
         x: 268
@@ -439,7 +439,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_4
+      name: E3walk_0
       rect:
         serializedVersion: 2
         x: 348
@@ -460,13 +460,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_5
+      name: E3walk_1
       rect:
         serializedVersion: 2
         x: 28
         y: 896
         width: 40
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,13 +481,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_6
+      name: E3walk_2
       rect:
         serializedVersion: 2
         x: 108
         y: 896
         width: 39
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,7 +502,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_7
+      name: E3walk_3
       rect:
         serializedVersion: 2
         x: 188
@@ -523,13 +523,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_8
+      name: E3walk_4
       rect:
         serializedVersion: 2
-        x: 268
+        x: 269
         y: 896
         width: 40
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,13 +544,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_9
+      name: E3walk_5
       rect:
         serializedVersion: 2
         x: 348
         y: 896
         width: 39
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,13 +565,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_10
+      name: E3walk_6
       rect:
         serializedVersion: 2
         x: 30
         y: 832
         width: 36
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,7 +586,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_11
+      name: E3walk_7
       rect:
         serializedVersion: 2
         x: 108
@@ -613,7 +613,7 @@ TextureImporter:
         x: 185
         y: 832
         width: 41
-        height: 48
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,7 +634,7 @@ TextureImporter:
         x: 267
         y: 832
         width: 38
-        height: 46
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -655,7 +655,7 @@ TextureImporter:
         x: 348
         y: 832
         width: 37
-        height: 43
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,7 +670,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_15
+      name: E3die_0
       rect:
         serializedVersion: 2
         x: 0
@@ -691,13 +691,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_17
+      name: E3die_1
       rect:
         serializedVersion: 2
         x: 81
         y: 768
         width: 67
-        height: 51
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,13 +712,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_18
+      name: E3die_2
       rect:
         serializedVersion: 2
         x: 160
         y: 768
         width: 66
-        height: 50
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,13 +733,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_19
+      name: E3die_3
       rect:
         serializedVersion: 2
         x: 259
         y: 768
         width: 49
-        height: 50
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,13 +754,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_20
+      name: E3die_4
       rect:
         serializedVersion: 2
         x: 350
         y: 768
         width: 36
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,13 +775,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_21
+      name: E3die_5
       rect:
         serializedVersion: 2
         x: 23
         y: 704
         width: 42
-        height: 47
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,13 +796,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_22
+      name: E3die_6
       rect:
         serializedVersion: 2
         x: 97
         y: 704
         width: 44
-        height: 44
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,13 +817,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_23
+      name: E3die_7
       rect:
         serializedVersion: 2
         x: 175
         y: 704
         width: 44
-        height: 40
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,13 +838,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_24
+      name: E3die_8
       rect:
         serializedVersion: 2
         x: 254
         y: 704
         width: 46
-        height: 34
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,13 +859,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_25
+      name: E3die_9
       rect:
         serializedVersion: 2
         x: 335
         y: 704
         width: 49
-        height: 33
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,13 +880,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_26
+      name: E3die_10
       rect:
         serializedVersion: 2
         x: 13
         y: 640
         width: 50
-        height: 29
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,13 +901,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_27
+      name: E3die_11
       rect:
         serializedVersion: 2
         x: 91
         y: 640
         width: 55
-        height: 23
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,13 +922,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_28
+      name: E3die_12
       rect:
         serializedVersion: 2
         x: 171
         y: 640
         width: 52
-        height: 19
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,13 +943,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_29
+      name: E3die_13
       rect:
         serializedVersion: 2
         x: 255
         y: 640
         width: 43
-        height: 17
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,13 +964,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_30
+      name: E3die_14
       rect:
         serializedVersion: 2
         x: 337
-        y: 640
+        y: 641
         width: 41
-        height: 12
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,7 +985,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_31
+      name: E3shield_0
       rect:
         serializedVersion: 2
         x: 28
@@ -1006,13 +1006,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_32
+      name: E3shield_1
       rect:
         serializedVersion: 2
-        x: 110
+        x: 111
         y: 576
         width: 36
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,13 +1027,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_33
+      name: E3shield_2
       rect:
         serializedVersion: 2
         x: 186
         y: 576
         width: 37
-        height: 45
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1048,13 +1048,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_34
+      name: E3shield_3
       rect:
         serializedVersion: 2
         x: 263
         y: 576
         width: 42
-        height: 36
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1069,13 +1069,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_35
+      name: E3shield_4
       rect:
         serializedVersion: 2
         x: 339
         y: 576
         width: 42
-        height: 32
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,13 +1090,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_36
+      name: E3shield_5
       rect:
         serializedVersion: 2
         x: 20
         y: 512
         width: 41
-        height: 28
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1111,13 +1111,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_37
+      name: E3shield_6
       rect:
         serializedVersion: 2
         x: 98
         y: 512
         width: 45
-        height: 27
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,13 +1132,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_38
+      name: E3shield_7
       rect:
         serializedVersion: 2
         x: 179
         y: 512
         width: 43
-        height: 27
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,139 +1153,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_39
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 512
-        width: 45
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bef31ac97c7a2df50800000000000000
-      internalID: 6904765654480535531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_40
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 512
-        width: 44
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93969e17cff8d21b0800000000000000
-      internalID: -5679725240638674631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_41
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 448
-        width: 45
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8197b19c7673901e0800000000000000
-      internalID: -2231191221490190056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_42
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 448
-        width: 45
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99b789226c1caa1e0800000000000000
-      internalID: -2185721612406850663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_43
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 448
-        width: 45
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b67e73ee5a34090800000000000000
-      internalID: -8051409266249602156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_44
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 448
-        width: 45
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16f66dc48db2fa1a0800000000000000
-      internalID: -6796165104676737183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Monster8PackA_45
+      name: E3shield_8
       rect:
         serializedVersion: 2
         x: 338
         y: 448
         width: 45
-        height: 27
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1300,13 +1174,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_46
+      name: E3shield_9
       rect:
         serializedVersion: 2
         x: 19
         y: 384
         width: 44
-        height: 25
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1321,13 +1195,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_47
+      name: E3shield_10
       rect:
         serializedVersion: 2
         x: 98
         y: 384
         width: 44
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1342,13 +1216,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_48
+      name: E3shield_11
       rect:
         serializedVersion: 2
         x: 179
         y: 384
         width: 44
-        height: 25
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1363,13 +1237,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_49
+      name: E3shield_12
       rect:
         serializedVersion: 2
         x: 259
         y: 384
         width: 44
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1384,13 +1258,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_50
+      name: E3shield_13
       rect:
         serializedVersion: 2
         x: 339
         y: 384
         width: 45
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1405,13 +1279,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_51
+      name: E3shield_14
       rect:
         serializedVersion: 2
         x: 18
         y: 320
         width: 45
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1426,13 +1300,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_52
+      name: E3shield_15
       rect:
         serializedVersion: 2
         x: 100
         y: 320
         width: 42
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1447,13 +1321,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_53
+      name: E3shieldDie_0
       rect:
         serializedVersion: 2
         x: 181
         y: 320
         width: 41
-        height: 25
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,13 +1342,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_54
+      name: E3shieldDie_1
       rect:
         serializedVersion: 2
         x: 261
         y: 320
         width: 41
-        height: 24
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1489,13 +1363,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_55
+      name: E3shieldDie_2
       rect:
         serializedVersion: 2
         x: 320
         y: 320
         width: 63
-        height: 35
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1531,13 +1405,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_57
+      name: E3shieldDie_3
       rect:
         serializedVersion: 2
         x: 6
         y: 256
         width: 57
-        height: 34
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1552,13 +1426,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_59
+      name: E3shieldDie_4
       rect:
         serializedVersion: 2
         x: 90
         y: 256
         width: 53
-        height: 31
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1573,13 +1447,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_60
+      name: E3shieldDie_7
       rect:
         serializedVersion: 2
         x: 338
         y: 256
         width: 45
-        height: 27
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,13 +1468,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_61
+      name: E3shieldDie_5
       rect:
         serializedVersion: 2
         x: 178
         y: 256
         width: 45
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1615,13 +1489,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_62
+      name: E3shieldDie_6
       rect:
         serializedVersion: 2
         x: 258
         y: 256
         width: 45
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1636,13 +1510,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_63
+      name: E3shieldDie_8
       rect:
         serializedVersion: 2
         x: 18
         y: 192
         width: 45
-        height: 26
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1657,13 +1531,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_64
+      name: E3shieldDie_9
       rect:
         serializedVersion: 2
         x: 99
         y: 192
         width: 44
-        height: 25
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1678,13 +1552,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_65
+      name: E3shieldDie_10
       rect:
         serializedVersion: 2
         x: 179
         y: 192
         width: 49
-        height: 25
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1699,13 +1573,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_66
+      name: E3shieldDie_11
       rect:
         serializedVersion: 2
         x: 245
         y: 192
         width: 69
-        height: 24
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1720,13 +1594,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_67
+      name: E3shieldDie_12
       rect:
         serializedVersion: 2
         x: 321
         y: 192
         width: 78
-        height: 24
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1741,13 +1615,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_68
+      name: E3shieldDie_13
       rect:
         serializedVersion: 2
         x: 6
         y: 128
         width: 70
-        height: 24
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1762,13 +1636,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_69
+      name: E3shieldDie_14
       rect:
         serializedVersion: 2
         x: 86
         y: 128
         width: 70
-        height: 21
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1783,13 +1657,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_70
+      name: E3shieldDie_15
       rect:
         serializedVersion: 2
         x: 178
         y: 128
         width: 45
-        height: 18
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1804,13 +1678,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_71
+      name: E3shieldDie_16
       rect:
         serializedVersion: 2
         x: 260
         y: 128
         width: 42
-        height: 15
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1825,13 +1699,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_72
+      name: E3stand_0
       rect:
         serializedVersion: 2
         x: 340
         y: 128
         width: 41
-        height: 28
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1846,13 +1720,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_73
+      name: E3stand_1
       rect:
         serializedVersion: 2
         x: 19
         y: 64
         width: 42
-        height: 32
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1867,13 +1741,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_74
+      name: E3stand_2
       rect:
         serializedVersion: 2
         x: 101
         y: 64
         width: 44
-        height: 36
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1888,13 +1762,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_75
+      name: E3stand_3
       rect:
         serializedVersion: 2
         x: 184
         y: 64
         width: 39
-        height: 45
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1909,13 +1783,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_76
+      name: E3stand_4
       rect:
         serializedVersion: 2
-        x: 270
+        x: 271
         y: 64
         width: 36
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1930,7 +1804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_77
+      name: E3stand_5
       rect:
         serializedVersion: 2
         x: 348
@@ -1951,13 +1825,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_79
+      name: E3hurt_0
       rect:
         serializedVersion: 2
         x: 25
         y: 0
         width: 41
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1972,13 +1846,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_80
+      name: E3hurt_1
       rect:
         serializedVersion: 2
         x: 103
         y: 0
         width: 41
-        height: 48
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1993,13 +1867,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_81
+      name: E3hurt_2
       rect:
         serializedVersion: 2
         x: 187
         y: 0
         width: 39
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2014,13 +1888,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster8PackA_82
+      name: E3hurt_3
       rect:
         serializedVersion: 2
         x: 270
         y: 0
         width: 39
-        height: 49
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

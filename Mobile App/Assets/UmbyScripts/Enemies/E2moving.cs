@@ -12,6 +12,7 @@ public class E2moving : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireballs;
+    [SerializeField] private Health player;
     private float cooldownTimer = Mathf.Infinity;
 
     //moving
@@ -23,14 +24,12 @@ public class E2moving : MonoBehaviour
     private float leftEdge;
 
     private Animator anim;
-    //private Rigidbody2D body;
 
     private void Awake()
     {
         rightEdge = transform.position.x + moveDistance;
         leftEdge = transform.position.x - moveDistance;
 
-        //body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -67,9 +66,8 @@ public class E2moving : MonoBehaviour
 
         cooldownTimer += Time.deltaTime;
 
-        if (PlayerInsight())
+        if (PlayerInsight() && !player.dead)
         {
-            //move = false;
             if (cooldownTimer >= attackCooldown)
             {
                 move = false;
@@ -119,10 +117,5 @@ public class E2moving : MonoBehaviour
     private void Moving()
     {
         move = true;
-    }
-
-    private void ColliderActivate()
-    {
-        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

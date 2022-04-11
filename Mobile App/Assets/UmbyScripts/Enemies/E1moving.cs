@@ -11,12 +11,13 @@ public class E1moving : MonoBehaviour
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private OldMoving player;
+    [SerializeField] private Health playerH;
     private float cooldownTimer = Mathf.Infinity;
     
     //moving
     [SerializeField] private float moveDistance;
     [SerializeField] private float speed;
-    private bool movingLeft;
+    public bool movingLeft;
     private bool move = true;
     private float rightEdge;
     private float leftEdge;
@@ -66,7 +67,7 @@ public class E1moving : MonoBehaviour
 
         cooldownTimer += Time.deltaTime;
 
-        if (PlayerInsight())
+        if (PlayerInsight() && !playerH.dead)
         {
             move = false;
             if(cooldownTimer >= attackCooldown)
@@ -116,8 +117,9 @@ public class E1moving : MonoBehaviour
     {
         move = false;
         anim.SetTrigger("Die");
+        box.enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        Physics2D.IgnoreLayerCollision(6, 7, true);
+        box.enabled = false;
     }
 
     private void Deactivate()
@@ -128,10 +130,5 @@ public class E1moving : MonoBehaviour
     private void Moving()
     {
         move = true;
-    }
-
-    private void ColliderActivate()
-    {
-        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

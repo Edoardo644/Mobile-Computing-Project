@@ -165,14 +165,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0869c61b394bc66428d19b6b9fbdae66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 6.61
+  range: 10.96
   colliderDistance: 0.36
   box: {fileID: 3312988920494629625}
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  player: {fileID: 0}
   moveDistance: 3
-  speed: 1.5
+  speed: 1.8
+  movingLeft: 0
   move: 1
   shield: 0
 --- !u!114 &3312988920494629629

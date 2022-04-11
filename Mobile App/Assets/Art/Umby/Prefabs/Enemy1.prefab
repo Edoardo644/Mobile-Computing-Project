@@ -165,12 +165,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 2
-  range: 1.97
+  range: 2.42
   colliderDistance: 0.39
   box: {fileID: 1828398198616282365}
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
   player: {fileID: 0}
+  playerH: {fileID: 0}
   moveDistance: 2.2
   speed: 1.1
+  flip: {fileID: 0}
+  movingLeft: 0

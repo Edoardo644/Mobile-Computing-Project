@@ -43,7 +43,7 @@ public class E3Health : MonoBehaviour
                 anim.SetTrigger("Die1");
                 enemy.move = false;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-                Physics2D.IgnoreLayerCollision(6, 7, true);
+                GetComponent<BoxCollider2D>().enabled = false;
                 dead = true;
             }
         }

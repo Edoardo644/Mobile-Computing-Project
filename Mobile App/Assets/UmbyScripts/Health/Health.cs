@@ -42,6 +42,7 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("Die");
                 GetComponent<OldMoving>().enabled = false;
+                GetComponent<CapsuleCollider2D>().enabled = false;
                 dead = true;
             }
         }

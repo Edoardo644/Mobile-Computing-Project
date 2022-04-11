@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 2
-  range: 3.99
+  range: 4.8
   colliderDistance: 0.49
   box: {fileID: 2913113617594133274}
   playerLayer:
@@ -184,8 +184,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  moveDistance: 2
-  speed: 1.5
+  player: {fileID: 0}
+  moveDistance: 3
+  speed: 2.6
   move: 1
 --- !u!1 &2913113618602765497
 GameObject:

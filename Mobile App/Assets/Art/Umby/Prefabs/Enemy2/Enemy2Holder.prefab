@@ -790,10 +790,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 5114020909951440908}
     m_Modifications:
     - target: {fileID: 2913113617594133268, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
-      propertyPath: range
-      value: 4.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 2913113617594133268, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
       propertyPath: fireballs.Array.data[0]
       value: 
       objectReference: {fileID: 5114020909717247153}
@@ -839,11 +835,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2913113617594133272, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25699997
+      value: -7.29
       objectReference: {fileID: 0}
     - target: {fileID: 2913113617594133272, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.28200006
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 2913113617594133272, guid: d2652e080e23aaf499848402d7d19f3c, type: 3}
       propertyPath: m_LocalPosition.z

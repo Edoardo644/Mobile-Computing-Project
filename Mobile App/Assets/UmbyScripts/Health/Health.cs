@@ -24,11 +24,19 @@ public class Health : MonoBehaviour
         player = GetComponent<OldMoving>();
     }
 
+    private void Update()
+    {
+        if (GetComponent<Transform>().position.y <= -10f)
+        {
+            TakeDamage(4);
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
 
-        if(currentHealth > 0)
+        if (currentHealth > 0)
         {
             //hurt
             anim.SetTrigger("Hurt");
@@ -46,6 +54,8 @@ public class Health : MonoBehaviour
                 dead = true;
             }
         }
+
+
     }
 
     private IEnumerator Invulnerability()

@@ -186,7 +186,7 @@ MonoBehaviour:
   - {fileID: 0}
   player: {fileID: 0}
   moveDistance: 3
-  speed: 2.6
+  speed: 3.5
   move: 1
 --- !u!1 &2913113618602765497
 GameObject:

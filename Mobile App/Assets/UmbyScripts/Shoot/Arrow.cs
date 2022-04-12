@@ -7,6 +7,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private PolygonCollider2D grid;
     [SerializeField] private CoinPicker collectables;
+    [SerializeField] private GemPicker collectable;
     private BoxCollider2D box;
     private bool hit;
     private float direction;
@@ -25,7 +26,7 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision != grid && collision.tag != "Coin")
+        if(collision != grid && collision.tag != "Coin" && collision.tag != "Gem")
         {
             hit = true;
             box.enabled = false;
@@ -37,7 +38,13 @@ public class Arrow : MonoBehaviour
             Destroy(collision.gameObject);
             collectables.Pickup();
         }
-            
+
+        if (collision.tag == "Gem")
+        {
+            Destroy(collision.gameObject);
+            collectable.TakeGem();
+        }
+
     }
 
     public void SetDirection(float dir)

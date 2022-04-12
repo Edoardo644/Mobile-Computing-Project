@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - AltEnemy
   - Ground
+  - Gem
   layers:
   - Default
   - TransparentFX

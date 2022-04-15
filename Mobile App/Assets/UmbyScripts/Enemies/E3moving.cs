@@ -97,4 +97,12 @@ public class E3moving : MonoBehaviour
     {
         move = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            player.TakeDamage(1);
+        }
+    }
 }

@@ -71,9 +71,9 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /* private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy" || (collision.gameObject.tag == "AltEnemy" && player.jump == false))
+        if(collision.gameObject.tag == "AltEnemy" && player.jump == false)
         {
             TakeDamage(1);
         }
@@ -86,5 +86,5 @@ public class Health : MonoBehaviour
         {
             TakeDamage(1);
         }
-    }
+    } */
 }

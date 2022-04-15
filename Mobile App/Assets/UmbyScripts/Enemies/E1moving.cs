@@ -103,6 +103,10 @@ public class E1moving : MonoBehaviour
         {
             Die();
         }
+        else if(collision.gameObject.tag == "Player" && player.jump == false)
+        {
+            playerH.TakeDamage(1);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -117,7 +121,6 @@ public class E1moving : MonoBehaviour
     {
         move = false;
         anim.SetTrigger("Die");
-        box.enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         box.enabled = false;
     }

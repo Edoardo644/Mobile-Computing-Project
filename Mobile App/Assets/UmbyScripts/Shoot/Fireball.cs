@@ -6,6 +6,7 @@ public class Fireball : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private PolygonCollider2D grid;
+    [SerializeField] private Health player;
     private BoxCollider2D box;
     private bool hit;
     private float direction;
@@ -32,6 +33,11 @@ public class Fireball : MonoBehaviour
             box.enabled = false;
             anim.SetTrigger("Explode");
             // Deactivate();
+        }
+
+        if (collision.tag == "Player")
+        {
+            player.TakeDamage(1);
         }
     }
 

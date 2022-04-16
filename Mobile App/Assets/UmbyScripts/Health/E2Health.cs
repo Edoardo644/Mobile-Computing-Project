@@ -44,6 +44,7 @@ public class E2Health : MonoBehaviour
                 anim.SetTrigger("Die");
                 enemy.move = false;
                 GetComponent<Rigidbody2D>().gravityScale = 1.5f;
+                GetComponent<BoxCollider2D>().isTrigger = false;
                 Physics2D.IgnoreLayerCollision(6, 7, true);
                 dead = true;
             }

@@ -94,10 +94,10 @@ public class E1moving : MonoBehaviour
 
     private void Charge()
     {
-        body.velocity = new Vector2(4.5f * (-transform.localScale.x), body.velocity.y);
+        transform.Translate(Time.deltaTime * 4.5f * (-transform.localScale.x), 0, 0);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /* private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player" && player.jump == true)
         {
@@ -107,13 +107,22 @@ public class E1moving : MonoBehaviour
         {
             playerH.TakeDamage(1);
         }
-    }
+    } */
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Arrow")
+        /* if(collision.tag == "Arrow")
         {
             Die();
+        } */
+
+        if (collision.tag == "Player" && player.jump == true || collision.tag == "Arrow")
+        {
+            Die();
+        }
+        else if (collision.tag == "Player" && player.jump == false)
+        {
+            playerH.TakeDamage(1);
         }
     }
 
@@ -122,7 +131,7 @@ public class E1moving : MonoBehaviour
         move = false;
         anim.SetTrigger("Die");
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        box.enabled = false;
+        Physics2D.IgnoreLayerCollision(6, 7, true);
     }
 
     private void Deactivate()
@@ -133,5 +142,10 @@ public class E1moving : MonoBehaviour
     private void Moving()
     {
         move = true;
+    }
+
+    private void ColliderActivate()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

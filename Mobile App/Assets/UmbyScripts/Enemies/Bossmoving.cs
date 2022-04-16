@@ -6,23 +6,25 @@ public class Bossmoving : MonoBehaviour
 {
     [SerializeField] private Transform leftEdge;
     [SerializeField] private Transform rightEdge;
-    [SerializeField] private Transform bottomEdge;
+    [SerializeField] private Transform topEdge;
     [SerializeField] private Transform enemy;
 
-    [SerializeField] private float speedX;
+    [SerializeField] private float speed;
+    [SerializeField] private float speedy;
     [SerializeField] private float idleDuration;
     private float idleTimer;
     private Vector3 initScale;
 
     private bool movingLeft = true;
-    private bool movingDown = true;
+    private bool movingTop = true;
     public bool move = true;
 
     //attack
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] bombs;
+    [SerializeField] private GameObject[] fireballs;
     private float attackTimer = 0;
+    private float attackDuration = 0;
     private float cooldownTimer = Mathf.Infinity;
 
     private Animator anim;
@@ -43,14 +45,10 @@ public class Bossmoving : MonoBehaviour
             Moving();               
         }
         
-        if (attackTimer > idleDuration * 2)
+        if (attackTimer > idleDuration * 3)
         {
             move = false;
-            if (cooldownTimer >= attackCooldown)
-            {
-                cooldownTimer = 0;
-                Attack();
-            }
+            Attack();
         }
     }
 
@@ -85,7 +83,7 @@ public class Bossmoving : MonoBehaviour
         idleTimer = 0;
 
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * (-dir), initScale.y, initScale.z);
-        enemy.position = new Vector3(enemy.position.x + Time.deltaTime * dir * speedX, enemy.position.y, enemy.position.z);
+        enemy.position = new Vector3(enemy.position.x + Time.deltaTime * dir * speed, enemy.position.y, enemy.position.z);
     }
 
     private void DirectionChange()
@@ -102,28 +100,63 @@ public class Bossmoving : MonoBehaviour
 
     private void Attack()
     {
-        if(transform.position.y < bottomEdge.position.y)
+        attackDuration += Time.deltaTime;
+        AttackMoving();
+        if(cooldownTimer > attackCooldown)
         {
-            enemy.position = new Vector3(enemy.position.x, enemy.position.y + Time.deltaTime * speedX, enemy.position.z);
+            Shoot();
+        }
+        if(attackDuration > 4)
+        {
+            attackTimer = 0;
+            attackDuration = 0;
+            move = true;
+        }
+    }
+
+    private void AttackMoving()
+    {
+        if (movingTop)
+        {
+            if (transform.position.y < topEdge.position.y)
+            {
+                MoveInDirectionY(1);
+            }
+            else
+            {
+                movingTop = false;
+            }
         }
         else
         {
-            Moving();
-            Shoot();
+            if (transform.position.y > rightEdge.position.y)
+            {
+                MoveInDirectionY(-1);
+            }
+            else
+            {
+                movingTop = true;
+            }
         }
+    }
+
+    private void MoveInDirectionY(float dir)
+    {
+        enemy.position = new Vector3(enemy.position.x, enemy.position.y + Time.deltaTime * dir * speedy, enemy.position.z);
     }
 
     private void Shoot()
     {
-        bombs[findBomb()].transform.position = firePoint.position;
-        gameObject.SetActive(true);
+        cooldownTimer = 0;
+        fireballs[findFireball()].transform.position = firePoint.position;
+        fireballs[findFireball()].GetComponent<BossFireball>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 
-    private int findBomb()
+    private int findFireball()
     {
-        for (int i = 0; i < bombs.Length; i++)
+        for (int i = 0; i < fireballs.Length; i++)
         {
-            if (!bombs[i].activeInHierarchy)
+            if (!fireballs[i].activeInHierarchy)
             {
                 return i;
             }

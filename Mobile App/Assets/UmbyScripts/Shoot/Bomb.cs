@@ -29,7 +29,6 @@ public class Bomb : MonoBehaviour
         if (collision != grid && collision.tag != "Platform")
         {
             hit = true;
-            box.enabled = false;
             anim.SetTrigger("Explode");
             // Deactivate();
         }
@@ -43,5 +42,11 @@ public class Bomb : MonoBehaviour
     private void Deactivate()
     {
         gameObject.SetActive(false);
+    }
+
+    public void ActivateBomb()
+    {
+        gameObject.SetActive(true);
+        hit = false;
     }
 }

@@ -39,14 +39,12 @@ public class Bossmoving : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Start()
+    public void WaitRoutine()
     {
-        StartCoroutine(Wait());
-    }
-
-    private IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(2);
+        for(float i = 0; i<2; i += Time.deltaTime)
+        {
+            //wait
+        }
         move = true;
     }
 

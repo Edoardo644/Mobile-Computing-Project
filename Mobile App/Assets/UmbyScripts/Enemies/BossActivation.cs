@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossActivation : MonoBehaviour
 {
+    [SerializeField] private Bossmoving moving;
     [SerializeField] private GameObject boss;
     [SerializeField] private GameObject bossHB;
 
@@ -12,6 +13,7 @@ public class BossActivation : MonoBehaviour
         if(collision.tag == "Player")
         {
             boss.SetActive(true);
+            moving.WaitRoutine();
             bossHB.SetActive(true);
             Destroy(gameObject);
         }

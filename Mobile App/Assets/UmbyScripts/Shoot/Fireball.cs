@@ -27,7 +27,7 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != grid)
+        if (collision != grid && collision.tag != "Coin" && collision.tag != "Gem" && collision.tag != "Health")
         {
             hit = true;
             box.enabled = false;

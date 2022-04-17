@@ -3,7 +3,7 @@ using UnityEngine;
 public class EdoHealth : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
-    private float currentHealth;
+    public float currentHealth { get; private set; }
 
 
 
@@ -24,6 +24,12 @@ public class EdoHealth : MonoBehaviour
         {
 
         }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+            TakeDamage(1);
     }
 
     

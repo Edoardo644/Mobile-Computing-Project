@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7111975936176552547}
   - component: {fileID: 7111975936176552546}
   - component: {fileID: 7111975936176552549}
+  - component: {fileID: 2897118546521822849}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Gem
@@ -119,3 +120,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2897118546521822849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7111975936176552551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160f528c3d0b3b148884f791d873f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

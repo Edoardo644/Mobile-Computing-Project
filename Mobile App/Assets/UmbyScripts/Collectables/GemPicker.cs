@@ -8,9 +8,9 @@ public class GemPicker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Gem")
+        if (collision.gameObject.tag == "Payer" || collision.tag == "Arrow")
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
             TakeGem();
         }
     }

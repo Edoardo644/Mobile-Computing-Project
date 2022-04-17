@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Bossmoving : MonoBehaviour
 {
+    // transforms
     [SerializeField] private Transform leftEdge;
     [SerializeField] private Transform rightEdge;
     [SerializeField] private Transform topEdge;
     [SerializeField] private Transform enemy;
 
+    // moving parameters
     [SerializeField] private float speed;
     [SerializeField] private float speedy;
     [SerializeField] private float idleDuration;
     private float idleTimer;
     private Vector3 initScale;
-
     private bool movingLeft = true;
     private bool movingTop = true;
-    public bool move = true;
+    public bool move = false;
 
     //attack
     [SerializeField] private float attackCooldown;
@@ -27,6 +28,8 @@ public class Bossmoving : MonoBehaviour
     private float attackDuration = 0;
     private float cooldownTimer = Mathf.Infinity;
 
+    //other
+    [SerializeField] private Health player;
     private Animator anim;
     private Rigidbody2D body;
 
@@ -34,6 +37,17 @@ public class Bossmoving : MonoBehaviour
     {
         initScale = enemy.localScale;
         anim = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        StartCoroutine(Wait());
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        move = true;
     }
 
     private void Update()
@@ -162,5 +176,13 @@ public class Bossmoving : MonoBehaviour
             }
         }
         return 0;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            player.TakeDamage(1);
+        }
     }
 }

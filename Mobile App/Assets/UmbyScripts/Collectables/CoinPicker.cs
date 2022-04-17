@@ -5,21 +5,21 @@ using TMPro;
 
 public class CoinPicker : MonoBehaviour
 {
-    public int coins = 0;
+    [SerializeField] private OldMoving player;
     [SerializeField] private TextMeshProUGUI counter;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Coin")
+        if (collision.gameObject.tag == "Player" || collision.tag == "Arrow")
         {
-            Destroy(collision.gameObject);
             Pickup();
+            Destroy(gameObject);
         }
     }
 
     public void Pickup()
     {
-        coins++;
-        counter.text = coins.ToString();
+        player.coins += 1;
+        counter.text = player.coins.ToString();
     }
 }

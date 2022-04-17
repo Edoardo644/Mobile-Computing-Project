@@ -10,6 +10,7 @@ public class OldMoving : MonoBehaviour
     private Animator anim;
     public bool jump;
     private float horizontalInput;
+    public int coins = 0;
 
     private void Awake()
     {

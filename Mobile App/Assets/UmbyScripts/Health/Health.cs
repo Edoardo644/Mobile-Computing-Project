@@ -54,8 +54,14 @@ public class Health : MonoBehaviour
                 dead = true;
             }
         }
+    }
 
-
+    public void TakeHealth(float damage)
+    {
+        if(currentHealth < startingHealth && currentHealth > 0)
+        {
+            currentHealth = Mathf.Clamp(currentHealth + damage, 0, startingHealth);
+        }
     }
 
     private IEnumerator Invulnerability()

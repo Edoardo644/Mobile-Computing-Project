@@ -903,5 +903,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 2
   dead: 0
-  iFramesDuration: 2
+  iFramesDuration: 1.5
   numOfFlashes: 4

@@ -18,7 +18,7 @@ public class Bossmoving : MonoBehaviour
     private Vector3 initScale;
     private bool movingLeft = true;
     private bool movingTop = true;
-    public bool move = false;
+    public bool move = true;
 
     //attack
     [SerializeField] private float attackCooldown;
@@ -37,15 +37,6 @@ public class Bossmoving : MonoBehaviour
     {
         initScale = enemy.localScale;
         anim = GetComponent<Animator>();
-    }
-
-    public void WaitRoutine()
-    {
-        for(float i = 0; i<2; i += Time.deltaTime)
-        {
-            //wait
-        }
-        move = true;
     }
 
     private void Update()

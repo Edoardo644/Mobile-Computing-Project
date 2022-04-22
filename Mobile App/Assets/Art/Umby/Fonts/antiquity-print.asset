@@ -55,9 +55,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: antiquity-print
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -98270706
   material: {fileID: -3887498989495950411}
-  materialHashCode: 0
+  materialHashCode: -1147791122
   m_Version: 1.1.0
   m_SourceFontFileGUID: ed93fb7bd8f104b4c84ea559743a1f36
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: ed93fb7bd8f104b4c84ea559743a1f36, type: 3}

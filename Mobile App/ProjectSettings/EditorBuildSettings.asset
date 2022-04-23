@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Levels/Menu.unity
+    guid: 50aa4edff44948f48b8cdb20dc8cec25
+  - enabled: 1
+    path: Assets/Levels/LivelloUmby.unity
+    guid: 5e7b8ebd7fafade4cbb4619c40014c48
+  - enabled: 1
+    path: Assets/Levels/LivelloEdo.unity
+    guid: 4909e77cdf0e82144ac085a367ac311d
+  - enabled: 1
+    path: Assets/Levels/LivelloLuca.unity
+    guid: ff42e21ea338c8c4eb22121e2193d2f7
   m_configObjects: {}

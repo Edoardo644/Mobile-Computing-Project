@@ -5,19 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Transform camera;
-
-    public void PlayGame()
-    {
-        camera.position = new Vector3(22.0189991f, camera.position.y, camera.position.z);
-        //camera.position = new Vector3(camera.position.x + Time.deltaTime * 2f, camera.position.y, camera.position.z);
-    }
-
-    public void Return()
-    {
-        camera.position = new Vector3(0, camera.position.y, camera.position.z);
-        //camera.position = new Vector3(camera.position.x + Time.deltaTime * 2f, camera.position.y, camera.position.z);
-    }
 
     public void QuitGame()
     {

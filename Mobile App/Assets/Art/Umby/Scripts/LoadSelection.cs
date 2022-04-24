@@ -7,6 +7,7 @@ public class LoadSelection : MonoBehaviour
 {
     public Animator anim;
 
+    // CARICAMENTO LEVEL SELECTION
     public void Play()
     {
         StartCoroutine(LoadingPlay());
@@ -21,6 +22,7 @@ public class LoadSelection : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    // CARICAMENTO MENU PRINCIPALE
     public void Return()
     {
         StartCoroutine(LoadingMenu());
@@ -33,5 +35,50 @@ public class LoadSelection : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadScene(0);
+    }
+
+    // CARICAMENTO LIVELLO ALIENI
+    public void LevelA()
+    {
+        StartCoroutine(LoadingA());
+    }
+
+    IEnumerator LoadingA()
+    {
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(2);
+    }
+
+    // CARICAMENTO LIVELLO DEMONI
+    public void LevelD()
+    {
+        StartCoroutine(LoadingD());
+    }
+
+    IEnumerator LoadingD()
+    {
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(3);
+    }
+
+    // CARICAMENTO LIVELLO SCHELETRI
+    public void LevelS()
+    {
+        StartCoroutine(LoadingS());
+    }
+
+    IEnumerator LoadingS()
+    {
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(4);
     }
 }

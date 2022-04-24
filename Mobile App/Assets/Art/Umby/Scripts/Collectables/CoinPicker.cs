@@ -7,6 +7,7 @@ public class CoinPicker : MonoBehaviour
 {
     [SerializeField] private OldMoving player;
     [SerializeField] private TextMeshProUGUI counter;
+    [SerializeField] private TextMeshProUGUI counter2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,5 +22,6 @@ public class CoinPicker : MonoBehaviour
     {
         player.coins += 1;
         counter.text = player.coins.ToString();
+        counter2.text = player.coins.ToString();
     }
 }

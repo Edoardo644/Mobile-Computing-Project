@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
     public bool dead;
@@ -41,6 +41,8 @@ public class BossHealth : MonoBehaviour
             {
                 anim.SetTrigger("Explode");
                 enemy.move = false;
+                GetComponent<CapsuleCollider2D>().enabled = false;
+                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
                 Physics2D.IgnoreLayerCollision(6, 7, true);
                 dead = true;
             }

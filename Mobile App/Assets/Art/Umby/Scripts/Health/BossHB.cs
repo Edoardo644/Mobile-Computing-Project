@@ -11,11 +11,11 @@ public class BossHB : MonoBehaviour
 
     private void Start()
     {
-        totalH.fillAmount = boss.currentHealth / 20;
+        totalH.fillAmount = boss.currentHealth / boss.startingHealth;
     }
 
     private void Update()
     {
-        currentH.fillAmount = boss.currentHealth / 20;
+        currentH.fillAmount = boss.currentHealth / boss.startingHealth;
     }
 }

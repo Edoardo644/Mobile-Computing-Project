@@ -18,7 +18,7 @@ public class Bossmoving : MonoBehaviour
     private Vector3 initScale;
     private bool movingLeft = true;
     private bool movingTop = true;
-    public bool move = true;
+    public bool move;
 
     //attack
     [SerializeField] private float attackCooldown;
@@ -173,5 +173,17 @@ public class Bossmoving : MonoBehaviour
         {
             player.TakeDamage(1);
         }
+    }
+
+    public void WaitRoutine()
+    {
+        StartCoroutine(BossWait());
+    }
+
+    IEnumerator BossWait()
+    {
+        yield return new WaitForSeconds(2);
+
+        move = true;
     }
 }

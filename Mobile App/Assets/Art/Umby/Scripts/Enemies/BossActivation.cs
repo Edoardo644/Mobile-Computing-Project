@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossActivation : MonoBehaviour
 {
-    // [SerializeField] private Bossmoving moving;
+    [SerializeField] private Bossmoving moving;
     [SerializeField] private GameObject boss;
     [SerializeField] private GameObject bossHB;
 
@@ -14,7 +14,10 @@ public class BossActivation : MonoBehaviour
         {
             boss.SetActive(true);
             bossHB.SetActive(true);
+            moving.WaitRoutine();
             Destroy(gameObject);
         }
     }
+
+    
 }

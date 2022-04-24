@@ -7,7 +7,7 @@ public class EdoHealth : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
-    private bool dead;
+    public bool dead;
 
     [Header("Iframes")]
     //invulnerability

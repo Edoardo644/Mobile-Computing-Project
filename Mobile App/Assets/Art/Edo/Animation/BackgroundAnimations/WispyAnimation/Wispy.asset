@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Wispy
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: b20c96fd85d7e0b45a8efc3f4a537f8f, type: 3}
+  - {fileID: 21300000, guid: 279987b714d4cca4b806156b2c8122de, type: 3}
+  - {fileID: 21300000, guid: 9b5a42a003a658342a7d8e572b7bfb23, type: 3}
+  - {fileID: 21300000, guid: 991d8d9b5b32af84287a3d6880e66850, type: 3}
+  - {fileID: 21300000, guid: 149bac73b99169c47a838eef645262c0, type: 3}
+  - {fileID: 21300000, guid: 49937143aed6bed4b895667d6b96362c, type: 3}
+  - {fileID: 21300000, guid: 5d2dfdd236f07964eaef5fa8a2170c33, type: 3}
+  - {fileID: 21300000, guid: 9511299c394d1ba4ca516c817a57a918, type: 3}
+  - {fileID: 21300000, guid: 4ad8c3cf946580448a971128324734ed, type: 3}
+  - {fileID: 21300000, guid: 39b0b9d8b4ca9324587ae7f8584053ec, type: 3}
+  - {fileID: 21300000, guid: 7fc18bc8f3af15640b7eecb58873a249, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

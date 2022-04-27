@@ -9,7 +9,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
-    [SerializeField] private Health player;
+    [SerializeField] private EdoHealth player;
     [SerializeField] private int dmg;
 
 
@@ -66,13 +66,16 @@ public class MeleeEnemy : MonoBehaviour
 
         if (PlayerInsight() && !player.dead)
         {
+            //move = false;
             anim.SetBool("moving", false);
-            anim.SetBool("meleeAttack", true);
+            //anim.SetBool("meleeAttack", true);
+            anim.SetTrigger("attack");
         }
         else
         {
+            //move = true;
             anim.SetBool("moving", true);
-            anim.SetBool("meleeAttack", false);
+            //anim.SetBool("meleeAttack", false);
         }
 
         

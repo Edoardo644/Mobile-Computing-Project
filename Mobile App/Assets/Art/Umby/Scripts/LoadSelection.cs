@@ -82,14 +82,29 @@ public class LoadSelection : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
-    // BLOCCO TEMPO
+    // S/BLOCCO TEMPO
     public void TimeStop()
     {
-
+        Time.timeScale = 0f;
     }
 
     public void TimePlay()
     {
+        Time.timeScale = 1f;
+    }
 
+    // RICARICA LIVELLO CORRENTE
+    public void Retry()
+    {
+        StartCoroutine(Reload());
+    }
+
+    IEnumerator Reload()
+    {
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

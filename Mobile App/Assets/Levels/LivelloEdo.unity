@@ -93619,6 +93619,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3632825047375363692, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 584838522}
+    - target: {fileID: 3632825047375363692, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
       propertyPath: moveDistance
       value: 3
       objectReference: {fileID: 0}

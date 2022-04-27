@@ -6,10 +6,12 @@ public class OldMoving : MonoBehaviour
 {
     [SerializeField] private float speed = 4.3f;
     [SerializeField] private float jumpPower = 6.8f;
+    [SerializeField] private Joystick joystick;
     private Rigidbody2D body;
     private Animator anim;
     public bool jump;
     private float horizontalInput;
+    private float horizontalMove;
     public int coins = 0;
 
     private void Awake()
@@ -22,9 +24,22 @@ public class OldMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = joystick.Horizontal;
+        horizontalMove = horizontalInput * speed;
 
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        if(joystick.Horizontal >= 0.2f)
+        {
+            horizontalMove = speed;
+        } else if(joystick.Horizontal <= -0.2f)
+        {
+            horizontalMove = -speed;
+        }
+        else
+        {
+            horizontalMove = 0f;
+        }
+
+        body.velocity = new Vector2(horizontalMove, body.velocity.y);
 
         if (horizontalInput > 0.01f)
         {
@@ -37,17 +52,25 @@ public class OldMoving : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space) && !jump)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jumping();
+        }
+
+        //set parameters
+        anim.SetBool("Run", horizontalInput != 0);
+        anim.SetBool("Jump", jump);
+    }
+
+    public void Jumping()
+    {
+        if (!jump)
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             jump = true;
             anim.SetTrigger("Jumping");
             //anim.SetBool("Jump", true);
         }
-
-        //set parameters
-        anim.SetBool("Run", horizontalInput != 0);
-        anim.SetBool("Jump", jump);
     }
 
     public bool CanAttack()

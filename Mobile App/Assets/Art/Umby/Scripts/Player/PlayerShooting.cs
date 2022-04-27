@@ -20,13 +20,21 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         //Attack
-        if(Input.GetKeyDown(KeyCode.S) && coolDownTimer > attackCoolDown && playerMoving.CanAttack())
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            Attack();
+        }
+
+        coolDownTimer += Time.deltaTime;
+    }
+
+    public void Attack()
+    {
+        if(coolDownTimer > attackCoolDown && playerMoving.CanAttack())
         {
             anim.SetTrigger("Shoot");
             coolDownTimer = 0;
         }
-
-        coolDownTimer += Time.deltaTime;
     }
 
     private void Shoot()

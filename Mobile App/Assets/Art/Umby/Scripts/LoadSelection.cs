@@ -81,4 +81,15 @@ public class LoadSelection : MonoBehaviour
 
         SceneManager.LoadScene(4);
     }
+
+    // BLOCCO TEMPO
+    public void TimeStop()
+    {
+
+    }
+
+    public void TimePlay()
+    {
+
+    }
 }

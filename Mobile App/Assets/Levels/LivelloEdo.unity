@@ -93615,8 +93615,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3632825047375363692, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
+      propertyPath: attack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632825047375363692, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
       propertyPath: moveDistance
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632825047375363692, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
+      propertyPath: colliderDistance
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3632825047375363693, guid: 134853c927e47504bbc49edf2f347f43, type: 3}
       propertyPath: m_Name

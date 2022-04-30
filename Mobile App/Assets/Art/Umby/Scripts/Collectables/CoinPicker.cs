@@ -11,7 +11,7 @@ public class CoinPicker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.tag == "Arrow")
+        if (collision.tag == "Player" || collision.tag == "Arrow")
         {
             Pickup();
             Destroy(gameObject);

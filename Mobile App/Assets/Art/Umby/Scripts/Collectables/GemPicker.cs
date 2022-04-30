@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GemPicker : MonoBehaviour
 {
-    public float currentGem { get; private set; }
+    [SerializeField] private OldMoving player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Payer" || collision.tag == "Arrow")
+        if (collision.tag == "Player" || collision.tag == "Arrow")
         {
             Destroy(gameObject);
             TakeGem();
@@ -17,6 +17,6 @@ public class GemPicker : MonoBehaviour
 
     public void TakeGem()
     {
-        currentGem = Mathf.Clamp(currentGem + 1, 0, 3);
+        player.gems = Mathf.Clamp(player.gems + 1, 0, 3);
     }
 }

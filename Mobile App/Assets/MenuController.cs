@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
 
     IEnumerator DeadWait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         deadMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -28,7 +28,7 @@ public class MenuController : MonoBehaviour
 
     IEnumerator WinWait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         Time.timeScale = 0f;
         winMenu.SetActive(true);

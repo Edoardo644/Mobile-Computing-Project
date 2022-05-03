@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemy : MonoBehaviour
+public class GhoulLogic : MonoBehaviour
 {
     //attack
-    [SerializeField] private float range;
-    [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private EdoHealth player;
@@ -19,7 +17,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private float moveDistance;
     [SerializeField] private float speed;
     public bool movingLeft;
-    public bool move = true; 
+    public bool move = true;
     private float rightEdge;
     private float leftEdge;
 
@@ -43,7 +41,7 @@ public class MeleeEnemy : MonoBehaviour
                 if (transform.position.x > leftEdge)
                 {
                     transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = Vector3.one;
                 }
                 else
                 {
@@ -55,7 +53,7 @@ public class MeleeEnemy : MonoBehaviour
                 if (transform.position.x < rightEdge)
                 {
                     transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-                    transform.localScale =  Vector3.one;
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else
                 {
@@ -63,55 +61,23 @@ public class MeleeEnemy : MonoBehaviour
                 }
             }
         }
-
-        if (PlayerInsight() && !player.dead)
-        {
-            //move = false;
-            
-            //anim.SetBool("meleeAttack", true);
-            anim.SetTrigger("attack");
-        }
-        else
-        {
-            //move = true;
-            anim.SetBool("moving", true);
-            //anim.SetBool("meleeAttack", false);
-        }
-
-        
     }
-
-    private bool PlayerInsight()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center + transform.right * range * (transform.localScale.x) * colliderDistance,
-            new Vector2(box.bounds.size.x * range, box.bounds.size.y), 0, Vector2.left, 0, playerLayer);
-
-        if(hit.collider != null)
+        if (collision.tag == "Player")
         {
-            playerH = hit.transform.GetComponent<EdoHealth>();
-        }
+            collision.GetComponent<EdoHealth>().TakeDamage(dmg);
+            anim.SetTrigger("death");
+            move = false;
 
-
-        return hit.collider != null;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(box.bounds.center + transform.right * range * (transform.localScale.x) * colliderDistance, new Vector2(box.bounds.size.x * range, box.bounds.size.y));
-    }
-
-    private void DamagePlayer()
-    {
-        if (PlayerInsight())
-        {
-            playerH.TakeDamage(dmg);
         }
     }
 
-    private void Moving()
+    void DestroyGameObject()
     {
-        move = true;
+        Destroy(gameObject);
     }
+
+
 
 }

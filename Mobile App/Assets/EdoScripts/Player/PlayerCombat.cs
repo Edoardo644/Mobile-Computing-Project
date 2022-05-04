@@ -19,10 +19,20 @@ public class PlayerCombat : MonoBehaviour
             Attack();
            
         }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Roll();
+
+        }
+
     }
 
+    void Roll()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        animator.SetTrigger("Roll");
 
+    }
 
     void Attack()
     {

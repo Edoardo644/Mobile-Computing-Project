@@ -77,6 +77,6 @@ public class OldMoving : MonoBehaviour
 
     public bool CanAttack()
     {
-        return horizontalInput == 0;
+        return horizontalInput == 0 || jump;
     }
 }

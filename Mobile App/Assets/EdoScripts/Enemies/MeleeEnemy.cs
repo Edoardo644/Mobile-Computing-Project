@@ -14,6 +14,8 @@ public class MeleeEnemy : MonoBehaviour
 
 
     private EdoHealth playerH;
+    public int maxHealth;
+    private int currentHealth;
 
     //moving
     [SerializeField] private float moveDistance;
@@ -67,7 +69,7 @@ public class MeleeEnemy : MonoBehaviour
         if (PlayerInsight() && !player.dead)
         {
             //move = false;
-            anim.SetBool("moving", false);
+            
             //anim.SetBool("meleeAttack", true);
             anim.SetTrigger("attack");
         }
@@ -112,6 +114,37 @@ public class MeleeEnemy : MonoBehaviour
     private void Moving()
     {
         move = true;
+    }
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        
+
+        //hurt animation
+        anim.SetTrigger("hurt");
+        
+        if (currentHealth <=0)
+        {
+            Die();
+        }
+
+     
+    }
+    
+    void Die()
+    {
+        Debug.Log("Enemy Died");
+        //die animation
+        anim.SetTrigger("die");
+
+        //disable enemy
+        this.enabled = false;
     }
 
 }

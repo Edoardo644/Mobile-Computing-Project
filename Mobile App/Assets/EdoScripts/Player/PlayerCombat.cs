@@ -34,6 +34,11 @@ public class PlayerCombat : MonoBehaviour
 
     }
 
+    void unRoll()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
     void Attack()
     {
 

@@ -5,11 +5,15 @@ using UnityEngine.UI;
 
 public class GemBar : MonoBehaviour
 {
-    [SerializeField] private GemPicker player;
+    public OldMoving player;
     [SerializeField] private Image currentG;
 
     private void Update()
     {
-        currentG.fillAmount = player.currentGem / 3;
+        currentG.fillAmount = player.gems / 3;
+        if (currentG.fillAmount > 0)
+        {
+            Debug.Log("presa!");
+        }
     }
 }

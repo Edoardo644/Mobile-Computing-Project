@@ -41,6 +41,7 @@ public class EdoHealth : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 GetComponent<EdoPlayerMovement>().enabled = false;
+                GetComponent<PlayerCombat>().enabled = false;
                 dead = true;
 
             }

@@ -12,7 +12,9 @@ public class OldMoving : MonoBehaviour
     public bool jump;
     private float horizontalInput;
     private float horizontalMove;
+    
     public int coins = 0;
+    public int gems = 0;
 
     private void Awake()
     {
@@ -75,6 +77,6 @@ public class OldMoving : MonoBehaviour
 
     public bool CanAttack()
     {
-        return horizontalInput == 0 && jump == false;
+        return horizontalInput == 0 || jump;
     }
 }

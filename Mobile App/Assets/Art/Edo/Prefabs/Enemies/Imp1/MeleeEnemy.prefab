@@ -159,11 +159,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c13de29f9faa3d4ba82b5f27ddd62f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
   range: 3.5
-  dmg: 1
-  colliderDistance: 0.06
+  colliderDistance: 0.09
   box: {fileID: 3632825047375363694}
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  player: {fileID: 0}
+  dmg: 1
+  moveDistance: 0
+  speed: 0
+  movingLeft: 0
+  move: 1

@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public int attackDmg;
 
     // Update is called once per frame
     void Update()
@@ -18,10 +19,25 @@ public class PlayerCombat : MonoBehaviour
             Attack();
            
         }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Roll();
+
+        }
+
     }
 
+    void Roll()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        animator.SetTrigger("Roll");
 
+    }
+
+    void unRoll()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
 
     void Attack()
     {
@@ -35,7 +51,7 @@ public class PlayerCombat : MonoBehaviour
         //Damage enemies in range
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("we hit" + enemy.name);
+            enemy.GetComponent<MeleeEnemy>().TakeDamage(attackDmg);
         }
 
         void onDrawGizmosSelected()

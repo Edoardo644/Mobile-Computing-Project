@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: cc5c5da12c04ac2488a04866a3118ae0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1572981927776043039
+    second: fall_back_1_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,7 +116,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fall_back_1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f104333baba54d510800000000000000
+      internalID: 1572981927776043039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

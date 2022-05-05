@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: FlameAnimationNormal2
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -6451659011051416826, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 5763944664088261270, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: -241156948233288094, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 1379929217135556736, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 1018185316041469859, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 4533643106053293943, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 2358241775649404834, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  - {fileID: 3670861799719939002, guid: f653af01825bcd14fa13a1fb8d9a7709, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

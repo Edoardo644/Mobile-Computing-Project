@@ -128,6 +128,8 @@ public class MeleeEnemy : MonoBehaviour
 
         //hurt animation
         anim.SetTrigger("hurt");
+        move= false;
+        anim.SetBool("moving",move);
         
         if (currentHealth <=0)
         {

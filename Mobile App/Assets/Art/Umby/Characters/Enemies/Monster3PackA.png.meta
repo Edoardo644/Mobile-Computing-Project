@@ -1,0 +1,804 @@
+fileFormatVersion: 2
+guid: 22805445cd86df04ca63595bf96f1601
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8109398155560186199
+    second: Monster3PackA_0
+  - first:
+      213: -1066891268156210604
+    second: Monster3PackA_1
+  - first:
+      213: -1190523866950400885
+    second: Monster3PackA_2
+  - first:
+      213: -6259286636321754514
+    second: Monster3PackA_3
+  - first:
+      213: 6455911903539771196
+    second: Monster3PackA_4
+  - first:
+      213: 4561630232998800335
+    second: Monster3PackA_5
+  - first:
+      213: 1040182703659297424
+    second: Monster3PackA_6
+  - first:
+      213: 8260191432182280931
+    second: Monster3PackA_7
+  - first:
+      213: 7727864963783016261
+    second: Monster3PackA_8
+  - first:
+      213: -4512850769776838473
+    second: Monster3PackA_9
+  - first:
+      213: -5959645697354151370
+    second: Monster3PackA_10
+  - first:
+      213: 811541794212220129
+    second: Monster3PackA_11
+  - first:
+      213: 3313893472952582534
+    second: Monster3PackA_39
+  - first:
+      213: -844757962643942668
+    second: Monster3PackA_40
+  - first:
+      213: -4597732571276385287
+    second: Monster3PackA_41
+  - first:
+      213: 1009864099055006668
+    second: Monster3PackA_42
+  - first:
+      213: -6577211607029067611
+    second: Monster3PackA_43
+  - first:
+      213: -7243760815633983708
+    second: Monster3PackA_44
+  - first:
+      213: -440386503146597827
+    second: Monster3PackA_45
+  - first:
+      213: -9002235551190913842
+    second: Monster3PackA_46
+  - first:
+      213: 1036077983480352925
+    second: Monster3PackA_47
+  - first:
+      213: 4308868587826084206
+    second: Monster3PackA_48
+  - first:
+      213: 1223725500463150119
+    second: Monster3PackA_49
+  - first:
+      213: 3077610700298306311
+    second: Monster3PackA_50
+  - first:
+      213: 5023456499944311095
+    second: Monster3PackA_53
+  - first:
+      213: 3166125447756551085
+    second: Monster3PackA_55
+  - first:
+      213: -7946263331166968505
+    second: Monster3PackA_56
+  - first:
+      213: 7730747489353865158
+    second: Monster3PackA_57
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monster3PackA_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 512
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae80abc751a57f80800000000000000
+      internalID: -8109398155560186199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45245935b04a131f0800000000000000
+      internalID: -1066891268156210604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 512
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b840cc5c9d86a7fe0800000000000000
+      internalID: -1190523866950400885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6231b6a7fb8229a0800000000000000
+      internalID: -6259286636321754514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 512
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3734bfdba1089950800000000000000
+      internalID: 6455911903539771196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_5
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 512
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb6392478a2e4f30800000000000000
+      internalID: 4561630232998800335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 451
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a2e1968a87f6e00800000000000000
+      internalID: 1040182703659297424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 450
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e233fbd75812a270800000000000000
+      internalID: 8260191432182280931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_8
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 448
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f39769d34ee3b60800000000000000
+      internalID: 7727864963783016261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_9
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 452
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b87a1f82222f51c0800000000000000
+      internalID: -4512850769776838473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_10
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 450
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a450650d51b4da0800000000000000
+      internalID: -5959645697354151370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_11
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 448
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec076c46fc234b00800000000000000
+      internalID: 811541794212220129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_39
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 128
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68103de4e805dfd20800000000000000
+      internalID: 3313893472952582534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_40
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 128
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2dc63db11d644f0800000000000000
+      internalID: -844757962643942668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_41
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 128
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3e3d416929130c0800000000000000
+      internalID: -4597732571276385287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 128
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f79f2c02c30e00800000000000000
+      internalID: 1009864099055006668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_43
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 128
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0d47614ec09b4a0800000000000000
+      internalID: -6577211607029067611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_44
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 128
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4271e32daedf87b90800000000000000
+      internalID: -7243760815633983708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_45
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 64
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3212140fce63e9f0800000000000000
+      internalID: -440386503146597827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_46
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 64
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc6fda4672a11380800000000000000
+      internalID: -9002235551190913842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_47
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 64
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9013f4cf63e06e00800000000000000
+      internalID: 1036077983480352925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_48
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 64
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e697639b62d2ccb30800000000000000
+      internalID: 4308868587826084206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_49
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72471bdebdb8bf010800000000000000
+      internalID: 1223725500463150119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_50
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 64
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703c83440aed5ba20800000000000000
+      internalID: 3077610700298306311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_53
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739cecf3217e6b540800000000000000
+      internalID: 5023456499944311095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_55
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da39ad3e15650fb20800000000000000
+      internalID: 3166125447756551085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_56
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745a416f99339b190800000000000000
+      internalID: -7946263331166968505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster3PackA_57
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c71e2fd1e1294b60800000000000000
+      internalID: 7730747489353865158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

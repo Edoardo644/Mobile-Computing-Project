@@ -8,6 +8,9 @@ public class attack : MonoBehaviour
     [SerializeField] private float attackCoolDown;
     private Animator anim;
     private movement playerMovement;
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private float range;
+    [SerializeField] private Transform attackPoint;
     private float coolDownTimer = Mathf.Infinity;
 
     // Start is called before the first frame update
@@ -34,6 +37,23 @@ public class attack : MonoBehaviour
         {
             anim.SetTrigger("attack");
             coolDownTimer = 0;
+
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, range, enemyLayer);
+
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                enemy.GetComponent<health>().TakeDamage(1);
+            }
         }
+    }
+
+    public void onDrawGizmosSelected()
+    {
+        if(attackPoint == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(attackPoint.position, range);
     }
 }

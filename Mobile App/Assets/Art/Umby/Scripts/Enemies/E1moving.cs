@@ -10,7 +10,6 @@ public class E1moving : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
-    [SerializeField] private OldMoving player;
     [SerializeField] private Health playerH;
     private float cooldownTimer = Mathf.Infinity;
     
@@ -18,19 +17,17 @@ public class E1moving : MonoBehaviour
     [SerializeField] private float moveDistance;
     [SerializeField] private float speed;
     public bool movingLeft;
-    private bool move = true;
+    public bool move = true;
     private float rightEdge;
     private float leftEdge;
 
     private Animator anim;
-    private Rigidbody2D body;
 
     private void Awake()
     {
         rightEdge = transform.position.x + moveDistance;
         leftEdge = transform.position.x - moveDistance;
 
-        body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -78,6 +75,14 @@ public class E1moving : MonoBehaviour
         }
     }
 
+    private void Attacking()
+    {
+        if (PlayerInsight())
+        {
+            playerH.TakeDamage(1);
+        }
+    }
+
     private bool PlayerInsight()
     {
         RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center + transform.right * range * (-transform.localScale.x) * colliderDistance, 
@@ -92,35 +97,9 @@ public class E1moving : MonoBehaviour
         Gizmos.DrawWireCube(box.bounds.center + transform.right * range * (-transform.localScale.x) * colliderDistance, new Vector2(box.bounds.size.x * range, box.bounds.size.y));
     }
 
-    private void Charge()
-    {
-        transform.Translate(Time.deltaTime * 4.5f * (-transform.localScale.x), 0, 0);
-    }
-
-    /* private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player" && player.jump == true)
-        {
-            Die();
-        }
-        else if(collision.gameObject.tag == "Player" && player.jump == false)
-        {
-            playerH.TakeDamage(1);
-        }
-    } */
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        /* if(collision.tag == "Arrow")
-        {
-            Die();
-        } */
-
-        if (collision.tag == "Player" && player.jump == true || collision.tag == "Arrow")
-        {
-            Die();
-        }
-        else if (collision.tag == "Player" && player.jump == false)
+        if (collision.tag == "Player")
         {
             playerH.TakeDamage(1);
         }

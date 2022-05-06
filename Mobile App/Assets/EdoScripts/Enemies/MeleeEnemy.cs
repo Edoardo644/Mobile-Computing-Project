@@ -11,11 +11,8 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private EdoHealth player;
     [SerializeField] private int dmg;
-
-
-    private EdoHealth playerH;
-    public int maxHealth;
-    private int currentHealth;
+    [SerializeField] private float attackCooldown;
+    private float cooldownTimer = Mathf.Infinity;
 
     //moving
     [SerializeField] private float moveDistance;
@@ -68,31 +65,21 @@ public class MeleeEnemy : MonoBehaviour
 
         if (PlayerInsight() && !player.dead)
         {
-            //move = false;
-            
-            //anim.SetBool("meleeAttack", true);
-            anim.SetTrigger("attack");
-        }
-        else
-        {
-            //move = true;
-            anim.SetBool("moving", true);
-            //anim.SetBool("meleeAttack", false);
+            move = false;
+            if (cooldownTimer >= attackCooldown)
+            {
+                cooldownTimer = 0;
+                anim.SetTrigger("Attack");
+            }
         }
 
-        
+        cooldownTimer += Time.deltaTime;
     }
 
     private bool PlayerInsight()
     {
         RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center + transform.right * range * (transform.localScale.x) * colliderDistance,
             new Vector2(box.bounds.size.x * range, box.bounds.size.y), 0, Vector2.left, 0, playerLayer);
-
-        if(hit.collider != null)
-        {
-            playerH = hit.transform.GetComponent<EdoHealth>();
-        }
-
 
         return hit.collider != null;
     }
@@ -107,7 +94,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (PlayerInsight())
         {
-            playerH.TakeDamage(dmg);
+            player.TakeDamage(dmg);
         }
     }
 
@@ -116,7 +103,7 @@ public class MeleeEnemy : MonoBehaviour
         move = true;
     }
 
-    void Start()
+    /* void Start()
     {
         currentHealth = maxHealth;
     }
@@ -147,6 +134,6 @@ public class MeleeEnemy : MonoBehaviour
 
         //disable enemy
         this.enabled = false;
-    }
+    } */
 
 }

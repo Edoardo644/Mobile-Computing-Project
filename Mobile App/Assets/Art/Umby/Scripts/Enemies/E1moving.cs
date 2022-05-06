@@ -73,8 +73,6 @@ public class E1moving : MonoBehaviour
                 anim.SetTrigger("Attack");
             }
         }
-
-        anim.SetBool("moving", move);
     }
 
     private void Attacking()

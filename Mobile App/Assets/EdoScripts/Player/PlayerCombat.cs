@@ -54,13 +54,15 @@ public class PlayerCombat : MonoBehaviour
             // enemy.GetComponent<MeleeHealth>().TakeDamage(attackDmg);
             enemy.GetComponent<DBossHealth>().TakeDamage(attackDmg);
         }
+    }
 
-        void onDrawGizmosSelected()
+    void onDrawGizmosSelected()
+    {
+        if (attackPoint == null)
         {
-            if (attackPoint == null)
-                return;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+            return;
         }
 
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

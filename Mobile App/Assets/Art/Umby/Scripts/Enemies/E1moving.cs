@@ -10,7 +10,6 @@ public class E1moving : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
-    [SerializeField] private OldMoving player;
     [SerializeField] private Health playerH;
     private float cooldownTimer = Mathf.Infinity;
     
@@ -23,14 +22,12 @@ public class E1moving : MonoBehaviour
     private float leftEdge;
 
     private Animator anim;
-    private Rigidbody2D body;
 
     private void Awake()
     {
         rightEdge = transform.position.x + moveDistance;
         leftEdge = transform.position.x - moveDistance;
 
-        body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -76,6 +73,8 @@ public class E1moving : MonoBehaviour
                 anim.SetTrigger("Attack");
             }
         }
+
+        anim.SetBool("moving", move);
     }
 
     private void Attacking()

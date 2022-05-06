@@ -51,12 +51,12 @@ public class PlayerCombat : MonoBehaviour
         //Damage enemies in range
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<MeleeEnemy>().TakeDamage(attackDmg);
+            // enemy.GetComponent<MeleeHealth>().TakeDamage(attackDmg);
+            enemy.GetComponent<DBossHealth>().TakeDamage(attackDmg);
         }
 
         void onDrawGizmosSelected()
         {
-
             if (attackPoint == null)
                 return;
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);

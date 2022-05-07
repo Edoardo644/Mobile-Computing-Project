@@ -11,41 +11,56 @@ public class spikes : MonoBehaviour
     [SerializeField] private float activeTime;
     private Animator anim;
     private SpriteRenderer spriteRend;
+    private BoxCollider2D box;
+    [SerializeField] private float timer;
+    private float t;
 
-    private bool triggered;
     private bool active;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        box = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+        t += Time.deltaTime;
+
+        if(t >= timer)
+        {
+            StartCoroutine(ActivateSpikes());
+            t = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            if (!triggered)
-            {
-                StartCoroutine(ActivateSpikes());
-            }
-            if (active)
-            {
-                collision.GetComponent<health>().TakeDamage(damage);
-            }
+        if (collision.tag == "Player" && active)
+        {         
+            collision.GetComponent<health>().TakeDamage(damage);
         }
     }
 
     private IEnumerator ActivateSpikes()
     {
-        triggered = true;
         yield return new WaitForSeconds(activationDelay);
         active = true;
         anim.SetBool("activated", true);
 
         yield return new WaitForSeconds(activeTime);
-        triggered = false;
         active = false;
         anim.SetBool("activated", false);
+    }
+
+    private void ActivateCollider()
+    {
+        box.enabled = true;
+    }
+
+    private void DisableCollider()
+    {
+        box.enabled = false;
     }
 }

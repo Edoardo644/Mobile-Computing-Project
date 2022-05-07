@@ -8,7 +8,7 @@ public class health : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
-    private bool dead;
+    public bool dead { get; private set;  }
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;

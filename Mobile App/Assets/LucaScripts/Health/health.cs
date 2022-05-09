@@ -27,7 +27,7 @@ public class health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
-        if(currentHealth > 0)
+        if (currentHealth > 0)
         {
             anim.SetTrigger("hit");
             StartCoroutine(Invulnerability());
@@ -41,6 +41,7 @@ public class health : MonoBehaviour
                 dead = true;
             }
         }
+        
     }
 
     private void Update()

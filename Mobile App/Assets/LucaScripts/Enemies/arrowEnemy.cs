@@ -43,7 +43,7 @@ public class arrowEnemy : MonoBehaviour
                 if (transform.position.x > leftEdge)
                 {
                     transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-                    transform.localScale = Vector3.one;
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else
                 {
@@ -55,7 +55,7 @@ public class arrowEnemy : MonoBehaviour
                 if (transform.position.x < rightEdge)
                 {
                     transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(1, 1, 1);
                 }
                 else
                 {
@@ -93,11 +93,11 @@ public class arrowEnemy : MonoBehaviour
 
     private void Shoot()
     {
-        arrows[findFireball()].transform.position = firePoint.position;
-        arrows[findFireball()].GetComponent<Fireball>().SetDirection(Mathf.Sign(-transform.localScale.x));
+        arrows[findArrow()].transform.position = firePoint.position;
+        arrows[findArrow()].GetComponent<Arrow>().SetDirection(Mathf.Sign(-transform.localScale.x));
     }
 
-    private int findFireball()
+    private int findArrow()
     {
         for (int i = 0; i < arrows.Length; i++)
         {

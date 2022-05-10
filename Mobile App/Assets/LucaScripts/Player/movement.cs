@@ -6,6 +6,7 @@ public class movement : MonoBehaviour
 {
 
     [SerializeField] private float speed;
+    [SerializeField] private health player;
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
@@ -47,6 +48,14 @@ public class movement : MonoBehaviour
         if(collision.gameObject.tag == "Tilemap")
         {
             grounded = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Arrow")
+        {
+            player.TakeDamage(1);
         }
     }
 }

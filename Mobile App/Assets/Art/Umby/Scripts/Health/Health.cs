@@ -28,7 +28,7 @@ public class Health : MonoBehaviour
     {
         if (GetComponent<Transform>().position.y <= -10f)
         {
-            TakeDamage(4);
+            TakeDamage(3);
         }
     }
 

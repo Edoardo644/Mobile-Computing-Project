@@ -71,7 +71,6 @@ public class OldMoving : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             jump = true;
             anim.SetTrigger("Jumping");
-            //anim.SetBool("Jump", true);
         }
     }
 

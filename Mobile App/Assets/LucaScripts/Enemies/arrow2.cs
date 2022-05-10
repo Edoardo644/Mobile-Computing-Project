@@ -24,7 +24,7 @@ public class arrow2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (/*collision != grid &&*/ collision.tag != "Coin" && collision.tag != "Gem" && collision.tag != "Health" && collision.tag != "Enemy")
+        if (/*collision != grid &&*/ collision.tag != "Coin" && collision.tag != "Health" && collision.tag != "Enemy")
         {
             hit = true;
             box.enabled = false;

@@ -94,7 +94,7 @@ public class arrowEnemy : MonoBehaviour
     private void Shoot()
     {
         arrows[findArrow()].transform.position = firePoint.position;
-        arrows[findArrow()].GetComponent<Arrow>().SetDirection(Mathf.Sign(-transform.localScale.x));
+        arrows[findArrow()].GetComponent<arrow2>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 
     private int findArrow()

@@ -82,6 +82,21 @@ public class LoadSelection : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    // CARICAMENTO LIVELLO SUCCESSIVO
+    public void NextLevel()
+    {
+        StartCoroutine(LoadingNext());
+    }
+
+    IEnumerator LoadingNext()
+    {
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     // S/BLOCCO TEMPO
     public void TimeStop()
     {

@@ -44,6 +44,7 @@ public class health : MonoBehaviour
         
     }
 
+    /*
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -51,6 +52,7 @@ public class health : MonoBehaviour
             TakeDamage(1);
         }
     }
+    */
     
     public void AddHealth(float _value)
     {

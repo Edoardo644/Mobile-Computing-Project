@@ -119,6 +119,7 @@ public class arrowEnemy : MonoBehaviour
         move = true;
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -126,4 +127,5 @@ public class arrowEnemy : MonoBehaviour
             player.TakeDamage(1);
         }
     }
+    */
 }

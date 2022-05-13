@@ -169,5 +169,5 @@ MonoBehaviour:
   player: {fileID: 0}
   playerH: {fileID: 0}
   moveDistance: 1
-  speed: 1.5
+  speed: 1
   movingLeft: 0

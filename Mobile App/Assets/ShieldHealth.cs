@@ -40,7 +40,7 @@ public class ShieldHealth : MonoBehaviour
                 if (!dead)
                 {
                     anim.SetTrigger("die");
-                    GetComponent<movement>().enabled = false;
+                    GetComponent<shieldEnemy>().enabled = false;
                     dead = true;
                 }
             }

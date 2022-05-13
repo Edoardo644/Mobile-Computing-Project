@@ -42,10 +42,14 @@ public class attack : MonoBehaviour
 
             foreach(Collider2D enemy in hitEnemies)
             {
-                if(enemy.GetComponent<health>() != null)
-                    enemy.GetComponent<health>().TakeDamage(1);
+                if(enemy.GetComponent<bossHealth>() != null)
+                    enemy.GetComponent<bossHealth>().TakeDamage(1);
                 if(enemy.GetComponent<ShieldHealth>() != null)
                     enemy.GetComponent<ShieldHealth>().TakeDamage(1);
+                if (enemy.GetComponent<meleeHealth>() != null)
+                    enemy.GetComponent<meleeHealth>().TakeDamage(1);
+                if (enemy.GetComponent<arrowHealth>() != null)
+                    enemy.GetComponent<arrowHealth>().TakeDamage(1);
             }
         }
     }

@@ -14,6 +14,7 @@ public class bossHealth : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
+    private BoxCollider2D box;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class bossHealth : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        box = GetComponent<BoxCollider2D>();
     }
 
     public void TakeDamage(float _damage)
@@ -61,7 +63,9 @@ public class bossHealth : MonoBehaviour
 
     private IEnumerator Invulnerability()
     {
-        Physics2D.IgnoreLayerCollision(6, 9, true);
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        box.enabled = false;
+
         for (int i = 0; i < numberOfFlashes; i++)
         {
             spriteRend.color = new Color(1, 0, 0, 0.5f);
@@ -69,6 +73,8 @@ public class bossHealth : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(6, 9, false);
+        
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+        box.enabled = true;
     }
 }

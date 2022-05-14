@@ -62,7 +62,8 @@ public class health : MonoBehaviour
     private IEnumerator Invulnerability()
     {
         Physics2D.IgnoreLayerCollision(6, 9, true);
-        for(int i = 0; i < numberOfFlashes; i++)
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        for (int i = 0; i < numberOfFlashes; i++)
         {
             spriteRend.color = new Color(1, 0, 0, 0.5f);
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
@@ -70,5 +71,6 @@ public class health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(6, 9, false);
+        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

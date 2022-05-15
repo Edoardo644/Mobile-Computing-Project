@@ -13,6 +13,8 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private int dmg;
     [SerializeField] private float attackCooldown;
     private float cooldownTimer = Mathf.Infinity;
+    private float currentHealth;
+    private float maxHealth = 2;
 
     //moving
     [SerializeField] private float moveDistance;
@@ -103,7 +105,7 @@ public class MeleeEnemy : MonoBehaviour
         move = true;
     }
 
-    /* void Start()
+     void Start()
     {
         currentHealth = maxHealth;
     }
@@ -134,6 +136,6 @@ public class MeleeEnemy : MonoBehaviour
 
         //disable enemy
         this.enabled = false;
-    } */
+    } 
 
 }

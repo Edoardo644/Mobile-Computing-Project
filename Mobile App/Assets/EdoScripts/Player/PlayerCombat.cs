@@ -27,7 +27,7 @@ public class PlayerCombat : MonoBehaviour
 
     }
 
-    void Roll()
+    public void Roll()
     {
         Physics2D.IgnoreLayerCollision(6, 7, true);
         animator.SetTrigger("Roll");
@@ -39,7 +39,7 @@ public class PlayerCombat : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 
-    void Attack()
+    public void Attack()
     {
 
         //play an attack animation

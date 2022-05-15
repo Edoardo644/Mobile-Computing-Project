@@ -7,6 +7,9 @@ public class EdoPlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     private Rigidbody2D body;
+    float horizontalInput = 0f;
+
+    public Joystick joystick;
     //private Collider2D boxCollider;
     //private Collider2D circleCollider;
     private Animator animator;
@@ -24,7 +27,19 @@ public class EdoPlayerMovement : MonoBehaviour
     private void Update()
     {
 
-        float horizontalInput = Input.GetAxis("Horizontal");
+        if(joystick.Horizontal >= .2f)
+        {
+            horizontalInput = speed;
+        } else if(joystick.Horizontal <= -.2f)
+        {
+            horizontalInput = -speed;
+        }else
+        {
+            horizontalInput = 0f;
+        }
+
+        float verticalMove = joystick.Vertical;
+       
 
         //moving left and right
         body.velocity = new Vector2(horizontalInput*speed, body.velocity.y);
@@ -37,19 +52,11 @@ public class EdoPlayerMovement : MonoBehaviour
 
 
         //jumping
-        if (Input.GetKey(KeyCode.UpArrow) && Grounded)
+        if (verticalMove>= .5f && Grounded)
         {
             Jump();
         }
 
-        //rolling ma GetKey andrà modificatoin GetKeyDown per far si che il roll
-        //sia eseguito una volta sola quando premo e non se tengo premuto
-       /* if (Input.GetKey(KeyCode.LeftShift))
-        {
-            boxCollider.enabled = false;
-            circleCollider.enabled = false;
-           
-        }*/
 
         //Set animator parameters
         animator.SetBool("Run", horizontalInput != 0);
@@ -57,7 +64,7 @@ public class EdoPlayerMovement : MonoBehaviour
 
     }
 
-    private void Jump()
+    public void Jump()
     {
         //speed andra' modificato con un altra variabile per sistemare il salto
 

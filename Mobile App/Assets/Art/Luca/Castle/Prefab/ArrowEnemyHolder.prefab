@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8870100284605364620}
   - component: {fileID: 8870100284605364616}
   - component: {fileID: 8870100284605364615}
-  - component: {fileID: 8870100284605364618}
   - component: {fileID: 8870100284605364619}
+  - component: {fileID: 6235818134710696100}
   m_Layer: 7
   m_Name: ArrowEnemy
   m_TagString: Enemy
@@ -154,21 +154,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8870100284605364618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8870100284605364613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca7d8a5a79bbae84aacd6a5aeb0f3c95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 1
-  iFramesDuration: 0
-  numberOfFlashes: 0
 --- !u!114 &8870100284605364619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +189,21 @@ MonoBehaviour:
   moveDistance: 1
   speed: 1
   move: 1
+--- !u!114 &6235818134710696100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8870100284605364613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e220ce3c83751a049a05ceb15d88972f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 1
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &8870100285483280087
 GameObject:
   m_ObjectHideFlags: 0

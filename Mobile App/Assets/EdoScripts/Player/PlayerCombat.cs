@@ -14,7 +14,7 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Attack();
            
@@ -51,8 +51,10 @@ public class PlayerCombat : MonoBehaviour
         //Damage enemies in range
         foreach(Collider2D enemy in hitEnemies)
         {
-            // enemy.GetComponent<MeleeHealth>().TakeDamage(attackDmg);
-            enemy.GetComponent<DBossHealth>().TakeDamage(attackDmg);
+            if (enemy.GetComponent<MeleeEnemy>() != null)
+                enemy.GetComponent<MeleeEnemy>().TakeDamage(1);
+            if (enemy.GetComponent<DBossHealth>() != null)
+                enemy.GetComponent<DBossHealth>().TakeDamage(1);
         }
     }
 

@@ -15,12 +15,23 @@ public class EdoHealth : MonoBehaviour
     [SerializeField] private float numberOfFlashes;
     private SpriteRenderer spriteRend;
 
+    public int coins;
+
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if(coins == 10)
+        {
+            coins = 0;
+            AddHealth(1);
+        }
     }
 
     public void TakeDamage(float _damage)

@@ -14,6 +14,8 @@ public class movement : MonoBehaviour
     private float horizontalInput;
     private float horizontalMove;
 
+    public int coins;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();

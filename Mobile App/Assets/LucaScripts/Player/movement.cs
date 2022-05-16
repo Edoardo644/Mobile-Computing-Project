@@ -7,9 +7,12 @@ public class movement : MonoBehaviour
 
     [SerializeField] private float speed;
     [SerializeField] private health player;
+    [SerializeField] private Joystick joystick;
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
+    private float horizontalInput;
+    private float horizontalMove;
 
     private void Awake()
     {
@@ -19,7 +22,22 @@ public class movement : MonoBehaviour
 
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = joystick.Horizontal;
+        horizontalMove = horizontalInput * speed;
+
+        if (joystick.Horizontal >= 0.2f)
+        {
+            horizontalMove = speed;
+        }
+        else if (joystick.Horizontal <= -0.2f)
+        {
+            horizontalMove = -speed;
+        }
+        else
+        {
+            horizontalMove = 0f;
+        }
+
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         if (horizontalInput > 0.01f)
@@ -36,7 +54,7 @@ public class movement : MonoBehaviour
         anim.SetBool("grounded", grounded);
     }
 
-    private void Jump()
+    public void Jump()
     {
         if (grounded)
         {

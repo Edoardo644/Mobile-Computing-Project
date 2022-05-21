@@ -14,12 +14,15 @@ public class OldMoving : MonoBehaviour
     private float horizontalMove;
     
     public int coins;
+    public int totalCoins;
+    [SerializeField] private Transform coinHolder;
 
     private void Awake()
     {
         //get parameters
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        totalCoins = coinHolder.childCount;
     }
 
     // Update is called once per frame

@@ -15,11 +15,14 @@ public class movement : MonoBehaviour
     private float horizontalMove;
 
     public int coins;
+    public int totalCoins;
+    [SerializeField] private Transform coinHolder;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        totalCoins = coinHolder.childCount;
     }
 
     private void Update()

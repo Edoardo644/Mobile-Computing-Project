@@ -13,8 +13,6 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private int dmg;
     [SerializeField] private float attackCooldown;
     private float cooldownTimer = Mathf.Infinity;
-    private float currentHealth;
-    private float maxHealth = 2;
 
     //moving
     [SerializeField] private float moveDistance;
@@ -24,12 +22,17 @@ public class MeleeEnemy : MonoBehaviour
     private float rightEdge;
     private float leftEdge;
 
+    //health
+    [SerializeField] private float maxHealth;
+    private float currentHealth;
+
     private Animator anim;
 
     private void Awake()
     {
         rightEdge = transform.position.x + moveDistance;
         leftEdge = transform.position.x - moveDistance;
+        currentHealth = maxHealth;
 
         anim = GetComponent<Animator>();
     }
@@ -70,11 +73,12 @@ public class MeleeEnemy : MonoBehaviour
             move = false;
             if (cooldownTimer >= attackCooldown)
             {
+                anim.SetTrigger("attack");
                 cooldownTimer = 0;
-                anim.SetTrigger("Attack");
             }
         }
 
+        anim.SetBool("moving", move);
         cooldownTimer += Time.deltaTime;
     }
 
@@ -105,11 +109,6 @@ public class MeleeEnemy : MonoBehaviour
         move = true;
     }
 
-     void Start()
-    {
-        currentHealth = maxHealth;
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -117,8 +116,7 @@ public class MeleeEnemy : MonoBehaviour
 
         //hurt animation
         anim.SetTrigger("hurt");
-        move= false;
-        anim.SetBool("moving",move);
+        move = false;
         
         if (currentHealth <=0)
         {

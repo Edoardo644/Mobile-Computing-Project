@@ -7,7 +7,7 @@ public class EdoPlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     private Rigidbody2D body;
-    float horizontalInput = 0f;
+    private float horizontalInput;
 
     public Joystick joystick;
     //private Collider2D boxCollider;
@@ -27,10 +27,10 @@ public class EdoPlayerMovement : MonoBehaviour
     private void Update()
     {
 
-        if(joystick.Horizontal >= .2f)
+        if(joystick.Horizontal >= 0.2f)
         {
             horizontalInput = speed;
-        } else if(joystick.Horizontal <= -.2f)
+        } else if(joystick.Horizontal <= -0.2f)
         {
             horizontalInput = -speed;
         }else
@@ -42,7 +42,7 @@ public class EdoPlayerMovement : MonoBehaviour
        
 
         //moving left and right
-        body.velocity = new Vector2(horizontalInput*speed, body.velocity.y);
+        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         //flipping left and right while moving
         if (horizontalInput > 0.01f)

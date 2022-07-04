@@ -52,7 +52,7 @@ public class EdoPlayerMovement : MonoBehaviour
 
 
         //jumping
-        if (verticalMove>= .5f && Grounded)
+        if ((verticalMove>= .5f && Grounded) || (Input.GetKeyDown(KeyCode.W) && Grounded))
         {
             Jump();
         }

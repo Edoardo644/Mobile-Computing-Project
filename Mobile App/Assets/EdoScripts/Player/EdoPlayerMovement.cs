@@ -68,9 +68,14 @@ public class EdoPlayerMovement : MonoBehaviour
     {
         //speed andra' modificato con un altra variabile per sistemare il salto
 
-        body.velocity = new Vector2(body.velocity.x, jumpPower);
-        animator.SetTrigger("Jump");
-        Grounded = false;
+        if (Grounded == true)
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpPower);
+            animator.SetTrigger("Jump");
+            Grounded = false;
+
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

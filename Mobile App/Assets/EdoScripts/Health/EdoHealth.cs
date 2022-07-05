@@ -16,6 +16,8 @@ public class EdoHealth : MonoBehaviour
     private SpriteRenderer spriteRend;
 
     public int coins;
+    public int totalCoins;
+    [SerializeField] private Transform coinHolder;
 
 
     private void Awake()
@@ -23,13 +25,13 @@ public class EdoHealth : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        totalCoins = coinHolder.childCount;
     }
 
     private void Update()
     {
-        if(coins == 10)
+        if((coins % 10) == 0)
         {
-            coins = 0;
             AddHealth(1);
         }
     }

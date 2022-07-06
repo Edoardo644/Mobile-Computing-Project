@@ -79,8 +79,7 @@ public class arrowEnemy : MonoBehaviour
 
     private bool PlayerInsight()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center + transform.right * range * (-transform.localScale.x) * colliderDistance,
-            new Vector2(box.bounds.size.x * range, box.bounds.size.y), 90, Vector2.left, 0, playerLayer);
+        RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center + transform.right * range * (-transform.localScale.x) * colliderDistance, new Vector2(box.bounds.size.x * range, box.bounds.size.y), 90, Vector2.left, 0, playerLayer);
 
         return hit.collider != null;
     }

@@ -43,16 +43,6 @@ public class health : MonoBehaviour
         }
         
     }
-
-    /*
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(1);
-        }
-    }
-    */
     
     public void AddHealth(float _value)
     {

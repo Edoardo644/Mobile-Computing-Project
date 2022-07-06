@@ -6,6 +6,7 @@ public class movement : MonoBehaviour
 {
 
     [SerializeField] private float speed;
+    [SerializeField] private float jspeed;
     [SerializeField] private health player;
     [SerializeField] private Joystick joystick;
     private Rigidbody2D body;
@@ -63,7 +64,7 @@ public class movement : MonoBehaviour
     {
         if (grounded)
         {
-            body.velocity = new Vector2(body.velocity.x, speed);
+            body.velocity = new Vector2(body.velocity.x, jspeed);
             anim.SetTrigger("jump");
             grounded = false;
         }

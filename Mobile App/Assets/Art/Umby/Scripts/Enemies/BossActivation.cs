@@ -18,6 +18,5 @@ public class BossActivation : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
     
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class bossHealth : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
     public bool dead { get; private set; }

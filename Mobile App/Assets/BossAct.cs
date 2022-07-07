@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossAct : MonoBehaviour
 {
-    [SerializeField] private Boss moving;
     [SerializeField] private GameObject boss;
     [SerializeField] private GameObject bossHB;
 

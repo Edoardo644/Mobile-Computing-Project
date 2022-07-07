@@ -8,7 +8,7 @@ public class MenuControl : MonoBehaviour
     [SerializeField] private GameObject winMenu;
     [SerializeField] private health player;
 
-    private void YouDead()
+    public void YouDead()
     {
         StartCoroutine(DeadWait());
     }
@@ -21,7 +21,7 @@ public class MenuControl : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    private void YouWin()
+    public void YouWin()
     {
         StartCoroutine(WinWait());
     }

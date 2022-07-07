@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OldMoving : MonoBehaviour
 {
-    [SerializeField] private float speed = 4.3f;
-    [SerializeField] private float jumpPower = 6.8f;
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpPower;
     [SerializeField] private Joystick joystick;
     private Rigidbody2D body;
     private Animator anim;
@@ -34,7 +34,8 @@ public class OldMoving : MonoBehaviour
         if(joystick.Horizontal >= 0.2f)
         {
             horizontalMove = speed;
-        } else if(joystick.Horizontal <= -0.2f)
+        } 
+        else if(joystick.Horizontal <= -0.2f)
         {
             horizontalMove = -speed;
         }

@@ -44,7 +44,7 @@ public class movement : MonoBehaviour
             horizontalMove = 0f;
         }
 
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        body.velocity = new Vector2(horizontalMove, body.velocity.y);
 
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;

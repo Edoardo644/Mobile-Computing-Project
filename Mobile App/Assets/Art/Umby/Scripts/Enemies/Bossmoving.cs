@@ -150,6 +150,7 @@ public class Bossmoving : MonoBehaviour
 
     private void Shoot()
     {
+        FindObjectOfType<AudioManager>().Play("Fireball");
         cooldownTimer = 0;
         fireballs[findFireball()].transform.position = firePoint.position;
         fireballs[findFireball()].GetComponent<BossFireball>().SetDirection(Mathf.Sign(transform.localScale.x));

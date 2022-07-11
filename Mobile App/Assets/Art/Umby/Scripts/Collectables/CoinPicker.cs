@@ -18,6 +18,7 @@ public class CoinPicker : MonoBehaviour
         {
             Pickup();
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("Coin");
         }
     }
 

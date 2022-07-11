@@ -41,6 +41,7 @@ public class Health : MonoBehaviour
             //hurt
             anim.SetTrigger("Hurt");
             StartCoroutine(Invulnerability());
+            FindObjectOfType<AudioManager>().Play("Hurt");
         }
 
         else

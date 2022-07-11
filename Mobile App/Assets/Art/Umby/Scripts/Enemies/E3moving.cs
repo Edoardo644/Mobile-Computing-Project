@@ -105,4 +105,9 @@ public class E3moving : MonoBehaviour
             player.TakeDamage(1);
         }
     }
+
+    private void Shield()
+    {
+        FindObjectOfType<AudioManager>().Play("Shield");
+    }
 }

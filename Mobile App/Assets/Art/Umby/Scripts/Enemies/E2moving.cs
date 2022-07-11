@@ -73,6 +73,7 @@ public class E2moving : MonoBehaviour
                 move = false;
                 cooldownTimer = 0;
                 anim.SetTrigger("Attack");
+                FindObjectOfType<AudioManager>().Play("Fireball");
             }
         }
     }

@@ -39,6 +39,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
+        FindObjectOfType<AudioManager>().Play("Arrow");
         arrows[findArrow()].transform.position = firePoint.position;
         arrows[findArrow()].GetComponent<Arrow>().SetDirection(Mathf.Sign(transform.localScale.x));
     }

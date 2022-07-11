@@ -16,6 +16,8 @@ public class BossActivation : MonoBehaviour
             bossHB.SetActive(true);
             moving.WaitRoutine();
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Stop("Theme");
+            FindObjectOfType<AudioManager>().Play("Boss");
         }
     }
     

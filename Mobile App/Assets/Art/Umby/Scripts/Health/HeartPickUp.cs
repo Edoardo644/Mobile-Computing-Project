@@ -12,6 +12,7 @@ public class HeartPickUp : MonoBehaviour
         {
             player.TakeHealth(1);
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("Heart");
         }
     }
 }

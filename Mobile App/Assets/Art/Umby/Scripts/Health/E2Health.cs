@@ -27,6 +27,7 @@ public class E2Health : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
+        FindObjectOfType<AudioManager>().Play("Hurt");
 
         if (currentHealth > 0)
         {

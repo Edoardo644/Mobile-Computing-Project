@@ -27,6 +27,7 @@ public class BossHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
+        FindObjectOfType<AudioManager>().Play("Hurt");
 
         if (currentHealth > 0)
         {
@@ -73,5 +74,10 @@ public class BossHealth : MonoBehaviour
     private void ColliderActivate()
     {
         Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
+    public void Explosion()
+    {
+        FindObjectOfType<AudioManager>().Play("Explode");
     }
 }

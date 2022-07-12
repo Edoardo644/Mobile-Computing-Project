@@ -7,6 +7,7 @@ public class OldMoving : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private Joystick joystick;
+    [SerializeField] private Health player;
     private Rigidbody2D body;
     private Animator anim;
     public bool jump;
@@ -69,7 +70,7 @@ public class OldMoving : MonoBehaviour
 
     public void Jumping()
     {
-        if (!jump)
+        if (!jump && !player.dead)
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             jump = true;

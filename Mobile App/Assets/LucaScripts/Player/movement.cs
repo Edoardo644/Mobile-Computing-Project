@@ -62,7 +62,7 @@ public class movement : MonoBehaviour
 
     public void Jump()
     {
-        if (grounded)
+        if (grounded && !player.dead)
         {
             body.velocity = new Vector2(body.velocity.x, jspeed);
             anim.SetTrigger("jump");

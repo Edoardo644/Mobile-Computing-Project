@@ -75,6 +75,7 @@ public class boss : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
+                FindObjectOfType<AudioManager>().Play("Bsword");
             }
             // move = true;
         }

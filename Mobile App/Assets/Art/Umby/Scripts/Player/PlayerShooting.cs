@@ -6,6 +6,7 @@ public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firePoint;
+    [SerializeField] private Health player;
     private Animator anim;
     [SerializeField] private GameObject[] arrows;
     private OldMoving playerMoving;
@@ -30,7 +31,7 @@ public class PlayerShooting : MonoBehaviour
 
     public void Attack()
     {
-        if(coolDownTimer > attackCoolDown && playerMoving.CanAttack())
+        if(coolDownTimer > attackCoolDown && playerMoving.CanAttack() && !player.dead)
         {
             anim.SetTrigger("Shoot");
             coolDownTimer = 0;

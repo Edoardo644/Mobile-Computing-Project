@@ -75,6 +75,7 @@ public class meleeEnemy : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
+                FindObjectOfType<AudioManager>().Play("Sword");
             }
             move = true;
         }

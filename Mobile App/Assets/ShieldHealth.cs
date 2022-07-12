@@ -29,6 +29,7 @@ public class ShieldHealth : MonoBehaviour
         if (!enemy.shield)
         {
             currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+            FindObjectOfType<AudioManager>().Play("Hit");
 
             if (currentHealth > 0)
             {

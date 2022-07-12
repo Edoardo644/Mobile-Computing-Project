@@ -46,13 +46,13 @@ MonoBehaviour:
   sounds:
   - name: Coin
     clip: {fileID: 8300000, guid: 5d9ba283c6abf3941b33c7807506b797, type: 3}
-    volume: 0.5
+    volume: 0.6
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Heart
     clip: {fileID: 8300000, guid: 4c01c80fd58f19e47b6c4aefbc4a039c, type: 3}
-    volume: 0.8
+    volume: 0.9
     pitch: 1
     loop: 0
     source: {fileID: 0}

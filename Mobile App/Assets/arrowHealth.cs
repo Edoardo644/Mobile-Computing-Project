@@ -26,6 +26,7 @@ public class arrowHealth : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        FindObjectOfType<AudioManager>().Play("Hit");
 
         if (currentHealth > 0)
         {

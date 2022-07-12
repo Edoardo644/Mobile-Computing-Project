@@ -28,19 +28,12 @@ public class EdoHealth : MonoBehaviour
         totalCoins = coinHolder.childCount;
     }
 
-    private void Update()
-    {
-        if((coins % 10) == 0)
-        {
-            AddHealth(1);
-        }
-    }
-
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        FindObjectOfType<AudioManager>().Play("Hit");
 
-        if(currentHealth > 0)
+        if (currentHealth > 0)
         {
             //player hurt
             anim.SetTrigger("hurt");
@@ -55,6 +48,7 @@ public class EdoHealth : MonoBehaviour
                 anim.SetTrigger("die");
                 GetComponent<EdoPlayerMovement>().enabled = false;
                 GetComponent<PlayerCombat>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
                 dead = true;
 
             }

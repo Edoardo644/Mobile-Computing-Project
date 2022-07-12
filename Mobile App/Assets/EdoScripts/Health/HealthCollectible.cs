@@ -12,6 +12,7 @@ public class HealthCollectible : MonoBehaviour
         {
             collision.GetComponent<EdoHealth>().AddHealth(healthValue);
             gameObject.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("Heart");
         }
     }
 }

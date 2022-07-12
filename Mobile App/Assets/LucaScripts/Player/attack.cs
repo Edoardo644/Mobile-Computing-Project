@@ -11,6 +11,7 @@ public class attack : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float range;
     [SerializeField] private Transform attackPoint;
+    [SerializeField] private health player;
     private float coolDownTimer = Mathf.Infinity;
 
     // Start is called before the first frame update
@@ -33,10 +34,11 @@ public class attack : MonoBehaviour
 
     public void Attack()
     {
-        if (coolDownTimer > attackCoolDown)
+        if (coolDownTimer > attackCoolDown && !player.dead)
         {
             anim.SetTrigger("attack");
             coolDownTimer = 0;
+            FindObjectOfType<AudioManager>().Play("Sword");
 
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, range, enemyLayer);
 

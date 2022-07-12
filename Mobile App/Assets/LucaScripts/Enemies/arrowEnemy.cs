@@ -73,6 +73,7 @@ public class arrowEnemy : MonoBehaviour
                 move = false;
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
+                FindObjectOfType<AudioManager>().Play("Arrow");
             }
         }
     }

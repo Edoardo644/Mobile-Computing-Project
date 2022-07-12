@@ -6,6 +6,7 @@ public class EdoPlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
+    [SerializeField] private EdoHealth player; 
     private Rigidbody2D body;
     private float horizontalInput;
 
@@ -14,6 +15,7 @@ public class EdoPlayerMovement : MonoBehaviour
     //private Collider2D circleCollider;
     private Animator animator;
     private bool Grounded;
+    
 
     private void Awake()
     {
@@ -66,14 +68,16 @@ public class EdoPlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        //speed andra' modificato con un altra variabile per sistemare il salto
-
-        if (Grounded == true)
+        if (!player.dead)
         {
-            body.velocity = new Vector2(body.velocity.x, jumpPower);
-            animator.SetTrigger("Jump");
-            Grounded = false;
+            //speed andra' modificato con un altra variabile per sistemare il salto
+            if (Grounded == true)
+            {
+                body.velocity = new Vector2(body.velocity.x, jumpPower);
+                animator.SetTrigger("Jump");
+                Grounded = false;
 
+            }
         }
         
     }

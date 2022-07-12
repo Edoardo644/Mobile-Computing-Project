@@ -27,6 +27,7 @@ public class DBossHealth : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        FindObjectOfType<AudioManager>().Play("Hit");
 
         if (currentHealth > 0)
         {
@@ -64,5 +65,10 @@ public class DBossHealth : MonoBehaviour
 
         //invulnerable
         Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
+    private void Fire()
+    {
+        FindObjectOfType<AudioManager>().Play("Fire");
     }
 }

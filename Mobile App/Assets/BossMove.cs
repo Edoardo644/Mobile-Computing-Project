@@ -42,7 +42,7 @@ public class BossMove : MonoBehaviour
                 if (transform.position.x > leftEdge)
                 {
                     transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-                    transform.localScale = Vector3.one;
+                    transform.localScale = new Vector3(1.5f, 1.5f, 1);
                 }
                 else
                 {
@@ -54,7 +54,7 @@ public class BossMove : MonoBehaviour
                 if (transform.position.x < rightEdge)
                 {
                     transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(-1.5f, 1.5f, 1);
                 }
                 else
                 {

@@ -25,6 +25,7 @@ public class MeleeEnemy : MonoBehaviour
     //health
     [SerializeField] private float maxHealth;
     private float currentHealth;
+    private bool dead;
 
     private Animator anim;
 
@@ -75,6 +76,7 @@ public class MeleeEnemy : MonoBehaviour
             {
                 anim.SetTrigger("attack");
                 cooldownTimer = 0;
+                FindObjectOfType<AudioManager>().Play("Sword");
             }
         }
 
@@ -112,13 +114,15 @@ public class MeleeEnemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        
+        FindObjectOfType<AudioManager>().Play("Hit");
 
-        //hurt animation
-        anim.SetTrigger("hurt");
-        move = false;
-        
-        if (currentHealth <=0)
+        if(currentHealth > 0)
+        {
+            //hurt animation
+            anim.SetTrigger("hurt");
+            move = false;
+        }
+        else if (!dead)
         {
             Die();
         }
@@ -126,14 +130,21 @@ public class MeleeEnemy : MonoBehaviour
      
     }
     
-    void Die()
+    private void Die()
     {
         Debug.Log("Enemy Died");
         //die animation
         anim.SetTrigger("die");
 
         //disable enemy
-        this.enabled = false;
-    } 
+        move = false;
+        GetComponent<BoxCollider2D>().enabled = false;
+        dead = true;
+    }
+
+    void DestroyGameObject()
+    {
+        Destroy(gameObject);
+    }
 
 }

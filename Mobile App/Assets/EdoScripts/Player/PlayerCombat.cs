@@ -10,6 +10,7 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public int attackDmg;
+    [SerializeField] private EdoHealth player;
 
     // Update is called once per frame
     void Update()
@@ -29,8 +30,12 @@ public class PlayerCombat : MonoBehaviour
 
     public void Roll()
     {
-        Physics2D.IgnoreLayerCollision(6, 7, true);
-        animator.SetTrigger("Roll");
+        if (!player.dead)
+        {
+            Physics2D.IgnoreLayerCollision(6, 7, true);
+            animator.SetTrigger("Roll");
+        }
+        
 
     }
 
@@ -41,21 +46,25 @@ public class PlayerCombat : MonoBehaviour
 
     public void Attack()
     {
-
-        //play an attack animation
-        animator.SetTrigger("Attack");
-
-        //Detect eniemies in range of attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
-
-        //Damage enemies in range
-        foreach(Collider2D enemy in hitEnemies)
+        if (!player.dead)
         {
-            if (enemy.GetComponent<MeleeEnemy>() != null)
-                enemy.GetComponent<MeleeEnemy>().TakeDamage(1);
-            if (enemy.GetComponent<DBossHealth>() != null)
-                enemy.GetComponent<DBossHealth>().TakeDamage(1);
+            //play an attack animation
+            animator.SetTrigger("Attack");
+            FindObjectOfType<AudioManager>().Play("Sword");
+
+            //Detect eniemies in range of attack
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            //Damage enemies in range
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                if (enemy.GetComponent<MeleeEnemy>() != null)
+                    enemy.GetComponent<MeleeEnemy>().TakeDamage(1);
+                if (enemy.GetComponent<DBossHealth>() != null)
+                    enemy.GetComponent<DBossHealth>().TakeDamage(1);
+            }
         }
+        
     }
 
     void onDrawGizmosSelected()

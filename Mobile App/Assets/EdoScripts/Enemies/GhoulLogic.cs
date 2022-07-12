@@ -69,7 +69,7 @@ public class GhoulLogic : MonoBehaviour
             collision.GetComponent<EdoHealth>().TakeDamage(dmg);
             anim.SetTrigger("death");
             move = false;
-
+            FindObjectOfType<AudioManager>().Play("Explode");
         }
     }
 
@@ -77,7 +77,5 @@ public class GhoulLogic : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
 
 }

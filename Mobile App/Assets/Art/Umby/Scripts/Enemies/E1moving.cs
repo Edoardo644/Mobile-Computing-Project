@@ -105,14 +105,6 @@ public class E1moving : MonoBehaviour
         }
     }
 
-    private void Die()
-    {
-        move = false;
-        anim.SetTrigger("Die");
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        Physics2D.IgnoreLayerCollision(6, 7, true);
-    }
-
     private void Deactivate()
     {
         Destroy(gameObject);
@@ -123,8 +115,4 @@ public class E1moving : MonoBehaviour
         move = true;
     }
 
-    private void ColliderActivate()
-    {
-        Physics2D.IgnoreLayerCollision(6, 7, false);
-    }
 }

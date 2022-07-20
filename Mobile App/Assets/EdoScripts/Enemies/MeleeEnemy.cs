@@ -10,6 +10,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private BoxCollider2D box;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private EdoHealth player;
+    [SerializeField] private PlayerCombat playerCombat;
     [SerializeField] private int dmg;
     [SerializeField] private float attackCooldown;
     private float cooldownTimer = Mathf.Infinity;
@@ -100,7 +101,7 @@ public class MeleeEnemy : MonoBehaviour
 
     private void DamagePlayer()
     {
-        if (PlayerInsight())
+        if (PlayerInsight() && !playerCombat.rolling)
         {
             player.TakeDamage(dmg);
         }

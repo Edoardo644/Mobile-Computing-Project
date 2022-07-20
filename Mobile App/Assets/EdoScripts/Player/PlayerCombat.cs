@@ -11,6 +11,10 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public int attackDmg;
     [SerializeField] private EdoHealth player;
+    public bool rolling;
+
+    [SerializeField] private float attackCoolDown;
+    private float coolDownTimer = Mathf.Infinity;
 
     // Update is called once per frame
     void Update()
@@ -20,20 +24,24 @@ public class PlayerCombat : MonoBehaviour
             Attack();
            
         }
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             Roll();
 
         }
 
+        coolDownTimer += Time.deltaTime;
+
     }
 
     public void Roll()
     {
-        if (!player.dead)
+        if (!player.dead && !rolling)
         {
             Physics2D.IgnoreLayerCollision(6, 7, true);
             animator.SetTrigger("Roll");
+            rolling = true;
         }
         
 
@@ -42,14 +50,16 @@ public class PlayerCombat : MonoBehaviour
     void unRoll()
     {
         Physics2D.IgnoreLayerCollision(6, 7, false);
+        rolling = false;
     }
 
     public void Attack()
     {
-        if (!player.dead)
+        if (!player.dead && coolDownTimer > attackCoolDown)
         {
             //play an attack animation
             animator.SetTrigger("Attack");
+            coolDownTimer = 0;
             FindObjectOfType<AudioManager>().Play("Sword");
 
             //Detect eniemies in range of attack
